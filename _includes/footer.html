@@ -1,0 +1,102 @@
+<!-- Footer -->
+<!-- Custom CSS Style-->
+<!--     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}"> -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center icon">
+                    <li>
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}  
+
+                    <a href="https://www.linkedin.com/profile/view?id=257818581" target = "_blank" title="LinkedIn">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>&nbsp;
+                    <a href="http://shaifaliagrawal.wordpress.com" target = "_blank" title="Blog">
+                        <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>&nbsp;
+                    <!-- <a href="http://www.quora.com/Shaifali-Agrawal" target = "_blank" title="Blog">
+                        <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>&nbsp; -->
+                    <!-- <li><a href="http://www.quora.com/Shaifali-Agrawal" target="_blank"><img src="../img/icons/quora.png" alt="Quora Profile Link" style="width:52px; height:52px;" /></a></li> -->
+                  
+                </ul>
+                <!-- <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p> -->
+            </div>
+        </div>
+        <div class="row">
+            <center><br/>
+                <small>Powered by Jekyll - Theme <a href="https://github.com/IronSummitMedia/startbootstrap-clean-blog" target="_blank">clean blog</a></small>
+            </center>
+        </div>
+    </div>
+    <!-- <div class="container">
+          <div class="row">
+            <center>
+                <ul class="icon">
+                  <li><a href="https://www.facebook.com/shaifali.agrawal1" target="_blank"><img src="../img/icons/facebook.png" alt="Facebook Link"/></a></li>
+                    <li><a href="https://www.twitter.com/exploreshaifali" target="_blank"><img src="../img/icons/twitter.png" alt="Twitter Link"/></a></li>
+                    <li><a href=" https://plus.google.com/u/0/+ShaifaliAgrawal" target="_blank"><img src="../img/icons/gplus2.png" alt="Google+ Link"/></a></li>
+                    <li><a href="https://www.github.com/exploreshaifali" target="_blank"><img src="../img/icons/github.png" alt="Github Link"/></a></li>
+                    <li><a href="https://www.linkedin.com/profile/view?id=257818581" target="_blank"><img src="../img/icons/linkedin.png" alt="LinkedIn Link"/></a></li>
+                    <li><a href="http://www.quora.com/Shaifali-Agrawal" target="_blank"><img src="../img/icons/quora.png" alt="Quora Profile Link"/></a></li>
+                    <li><a href="http://scr.im/shaifali" target="_blank"><img src="../img/icons/mail.png" alt="Email ID"/></a></li>
+                </ul>
+            </center>
+          </div>
+        </div> -->
+</footer>
+
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>

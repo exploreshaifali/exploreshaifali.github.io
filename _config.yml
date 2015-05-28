@@ -1,0 +1,17 @@
+# Site settings
+title: Shaifali's Blog
+header-img: img/home-bg.jpg
+email: agrawalshaifali09@gmail.com
+description: "This Blog is about my experiments and experience with technology, computer science and life events."
+baseurl: ""
+url: "http://exploreshaifali.github.io"
+twitter_username: exploreshaifali
+github_username:  exploreshaifali
+facebook_username:  shaifali.agrawal1
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

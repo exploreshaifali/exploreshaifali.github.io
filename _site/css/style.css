@@ -1,0 +1,24 @@
+/*========== Social Icons ==========*/
+.icon img{
+	width:52px;
+	height:52px;
+}
+ul.icon {
+	font-size:54px;
+	margin:0.5em 0 0.5em 0;
+}
+ul.icon li {
+	display:inline-block;
+	opacity: 0.5;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+ul.icon li:hover {
+	opacity: 1.0;
+}
+
+.span12 {
+ width: 1170px;
+}
