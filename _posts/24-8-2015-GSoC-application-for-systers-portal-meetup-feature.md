@@ -9,7 +9,7 @@ tags:
   - event
 ---
 
-Holla! Here I am sharing my GSoC 2015 application for **Systers, an Anita Borg Institute Community**, project named - **Systers Portal Meetup Feature**. They have pre-defined format of application so basically everything below is answers of those questions.  
+Holla! Here I am sharing my GSoC 2015 application for **Systers, an Anita Borg Institute Community**, project named - **Systers Portal Meetup Feature**. They have pre-defined format of application so basically everything below is answers of questions present in their application format.  
 
 ---
 
