@@ -196,11 +196,11 @@ Since for almost each task/feature, we will need at lest one url, view, template
 
 For **Systers Admin** we need to add:
 
-    1. Manage all organizers and attendees
-    2. Create a new Systers Chapter(meetup location)
-    3. Assign meetup organizers
+  -   Manage all organizers and attendees
+  -   Create a new Systers Chapter(meetup location)
+  -   Assign meetup organizers
         Since Systers Admins will have all permissions to create, change and delete any thing in chapters, meetup and discussions app, all above features can be achieved from Django admin app without any hassle.
-    4. Receive notification of all new meetup location requests
+  -   Receive notification of all new meetup location requests
         * For this a meetup organizer can fill one form putting details of new local meetup group she is requesting for, then using notifications app all Systers admin will receive notification on their dashboard to take actions accordingly.
         * This will reside in chapters app.
         * A new button on organizer dashboard(template) to request new chapter(local meetup group), when an organizer click on `new chapter` button a form will appear(through a view) to fill the details of new chapter as per the chapters model.
@@ -208,56 +208,54 @@ For **Systers Admin** we need to add:
 
 For **chapter(local_meetup_group) organizer** following features are needed:
 
-    1. Submit Initial Request for new chapter(local_meetup_group)
-        This is same as of 4th feature for Systers Admin.
-    2. Manage chapter(local_meetup_group) profile
-        As like a user can edit his profile in sysers_portal similarly organizers will be allowed to edit a chapters profile.
-        template to edit similar to [syters_portal_users_edit page][6]
-        form similar to [systers_portal_user_form][7]
-    3. Able to post new meetup
-        `post new meetup` button on organizer dashboard(template)
-        a form than will need the entries that are in the meetup model.
-        On submitting form a new meetup get posted
-        A new page for recently posted meetup will get generated whose link will be available on Systers meetup page and that chapter page for which meetup is posted
-    4. Manage Meetup Profile
-        As like a user have option to edit his profile, similarly one `edit meetup profile` button will appear on organizer dashboard.
-        A new template and form for letting organizers edit meetup profile will need.
-        It will reside inside meetup app.
-    5. Identify all members as Systers or Guest
-        Organizers will able to look at list of all those who are attending(or requested to attend) the coming meetup and in that list they can also see if a member is a Syster or a guest by a lable `S or G` respectively attached with each person's detail.
+  - Submit Initial Request for new chapter(local_meetup_group)
+      *  This is same as of 4th feature for Systers Admin.
+  - Manage chapter(local_meetup_group) profile
+      *  As like a user can edit his profile in sysers_portal similarly organizers will be allowed to edit a chapters profile.
+      *  template to edit similar to [syters_portal_users_edit page][6]
+      *  form similar to [systers_portal_user_form][7]
+  - Able to post new meetup
+      *  `post new meetup` button on organizer dashboard(template)
+      *  a form than will need the entries that are in the meetup model.
+      *  On submitting form a new meetup get posted
+      *  A new page for recently posted meetup will get generated whose link will be available on Systers meetup page and that chapter page for which meetup is posted
+  - Manage Meetup Profile
+      *  As like a user have option to edit his profile, similarly one `edit meetup profile` button will appear on organizer dashboard.
+      *  A new template and form for letting organizers edit meetup profile will need.
+      *  It will reside inside meetup app.
+  - Identify all members as Systers or Guest
+      *  Organizers will able to look at list of all those who are attending(or requested to attend) the coming meetup and in that list they can also see if a member is a Syster or a guest by a lable `S or G` respectively attached with each person's detail.  
         Also organizers can look at list of only those women who are Systers and who are guest separately.
         Also whenever an organizer look at profile of any other member they will see if a person is a Syster or a guest.
         For this one check will be needed that the user is a SysterUser or not.
-    6. Able to manage local meetup logistics
-        meetup logistics include - venue, volunteers(meetup members), sponsorship
-        while adding new meetup or editing meetup profile, an organizer can alter/manage these things
-    7.Be notified of all incoming join requests and Approve all Meetup join requests
-        A meetup page is visible to everyone, a visitor/guest can look it, and also request for attending the meetup.
-        A button on meetup page for visitors to request to attend the meetup
-        Using notification app all organizers get notified for a new request for joining meetup and they can respond on it.
-        Accordingly visitors will get notification as per organizer respond.
-    8. Manage discussion
-        Discussions can be allowed at chapters page as well as on each coming meetup page.
-        Very similar to comments in blog app of systers_portal.
+  - Able to manage local meetup logistics
+      *  meetup logistics include - venue, volunteers(meetup members), sponsorship
+      *  while adding new meetup or editing meetup profile, an organizer can alter/manage these things
+  - Be notified of all incoming join requests and Approve all Meetup join requests
+      *  A meetup page is visible to everyone, a visitor/guest can look it, and also request for attending the meetup.
+      *  A button on meetup page for visitors to request to attend the meetup
+      *  Using notification app all organizers get notified for a new request for joining meetup and they can respond on it.
+      *  Accordingly visitors will get notification as per organizer respond.
+  - Manage discussion
+      *  Discussions can be allowed at chapters page as well as on each coming meetup page.
+      *  Very similar to comments in blog app of systers_portal.
 
- 
+ For **chapter(local_meetup_group )members** following features are needed:
 
-For **chapter(local_meetup_group )members** following features are needed:
-
-  1.  Edit Profile
+  -  Edit Profile
       Being a Syster member they are allowed to edit their profile.
-  2.  Post to Discussion area
+  -  Post to Discussion area
       chapter members will have privilege to post of discussion area, like any other Syster member is allowed to comment on blog.
-  3.  Invite a guest to meetup
+  -  Invite a guest to meetup
       by clicking on "invite guest" button on meetup page, members are allowed to add details of guest they want to invite
         organizers will get a notification using notification app
         if organizer approved the request, guest will get notification
 
 For **guests/visitors** following features are needed:
 
-  1.  Edit Profile
+  -  Edit Profile
       This can be implemented in similar manner as systers_portal users edit profile work, with only difference of model.
-  2.  View Discussion area
+  -  View Discussion area
       As like other systers members they are also allowed to view discussion area
 
 ###List of templates
@@ -483,7 +481,7 @@ I have build a web app in 4 days [Help The Needy!][3] for a hackathon on world w
 #### Motivation
 I have been working as **Python** Developer and Analyst at [Development Center][18](DC, a section in my college) along with my college studies. There we took lots of initiative to bring people more close to technology. Like I have taken workshop for Python, HTML, CSS, Linux for my college students. Also we went to villages to teach girls about basics of computers. This shows my motivation towards computer science and technology and also towards bringing people(specially women) closer to technology.
 
-**Systers Mission**
+####Systers Mission
 This is well known that ratio of Women in technology is very less comparative to Men. Reason is not that women are not capable, they are! it is that "they does not participate".
 Systers Mission to “increase the number of women in computer science and make the environments in which women work more conducive to their continued participation in the field.” is what I immensely support! As I have mentioned above I took initiative to teach village girls about computers. Looking at the happiness and satisfaction on the face of those girls gave feelings that are something way beyond the imagination. We need to bring more and more women close to technology and computer science.
 Women need to believe that they are awesome! They can stand along with any other men in the world and give them tough competition!
@@ -519,10 +517,12 @@ I have scheduled the timeline for project accordingly.
 I am in fifth year of an integrated(10+2+6) masters program in my college.
 
 >What programming courses have you taken?
+
 Apart from C, C++ and Java,Algorithms, relational databases. Linux courses in my college I have taken various courses on Python, Programming, Databases, DataScience from various MOOCs offering sites like [Coursera][20], [edx][21], [Udacity][22] and self learning tutorials like [codeacademy][23].
     
 
 >What did you like about them? What did you not like? 
+
 The first language that I learned was C. Writing programs in C was full of fun task for me. Then I have learned other languages, various concepts and fundamentals of computer science. I still remember while taking algorithms classes I got to know how a Fibannaci series program can be implemented in different ways using iterative approach, recursive approach, dynamic programming, matrix optimization approach and how the programs' time complexity can vary from exponential to O(n) to Log(n).
 
 Also it feels great when you know/realize power of softwares, very best example I have is of git(I am a big git fan!), for Linus Torvalds it is nothing more than a source control management system. But then things like github came up, they let people share their code with others, practice collaborative development, looking at history of the code and project, participating and contributing for someone else's project. It has changed the way how open source communities work. It put developers/coders/programmers around the globe together!
