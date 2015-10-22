@@ -24,27 +24,34 @@ Each pool have 4 main properties:
 
     1. You have created a queue
     2. Post a message in that queue    
-If you have attached a queue to a pool, message will go to that pool else it will go to default pool.
+    3. If you have attached a queue to a pool, message will go to that pool else it will go to default pool.
 
 Now question arise how to attach to a pool, let say you have a queue with name q1 and a pool with name p1. How will you register queue q1 to pool p1 so that all messages that you post to q1 goes to the receiver through pool p1.
 
 ####Registering queues to pools:
 
-This is where **flavors** comes in. A flavor in terms of Zaqar, specify a pool's capability(can be any combination of FIFO, claims, durability, AOD(at least once delivery), hight_throughput). So let say we have following flavors:  
-    f1 : {name: "f1", capabilities: ['durability'], group: [g1]}  
+This is where **flavors** comes in. A flavor in terms of Zaqar, specify a pool's capability(can be any combination of FIFO, claims, durability, AOD(at least once delivery), hight_throughput). So let say we have following pools: 
+  
+    p1: {name: p1, uri: "xxx/xxx/xx", group: g1, weight: 3}  
+    p2: {name: p2, uri: "xxx/xxx/aa", group: g1, weight: 4}  
+    p3: {name: p1, uri: "yyy/yyy/yy", group: g2, weight: 3}  
+    p4: {name: p1, uri: "yyy/yyy/bb", group: g2, weight: 4}      
+
+and flavors:
+
+    f1 : {name": f1", capabilities: ['durability'], group: [g1]}  
     f2 : {name: "f2", capabilities: ['FIFO'], group: [g1, g2]}  
-    f3 : {name: "f3", capabilities: ['high_throughput'], group: [g2]}  
+    f3 : {name: "f3", capabilities: ['high_throughput'], group: [g2]}
 
 and queues:  
 
     q1: {name: q1, flavors: [f1, f2]}  
     q2: {name; q2, flavors: [f3, f2]}  
 
-and pools:
+Thus while creating a queue you can add existing flavor names that can be a part of some existing group from pools. This is how linking of queues to pool works. A queue will basically get linked to some group via flavor and then will get registered to more likelyhood pool of that group as per weith of the pools in that group.
 
-    p1: {name: p1, uri: "xxx/xxx/xx", group: g1, weight: 3}  
-    p2: {name: p2, uri: "xxx/xxx/aa", group: g1, weight: 4}  
-    p3: {name: p1, uri: "yyy/yyy/yy", group: g2, weight: 3}  
-    p4: {name: p1, uri: "yyy/yyy/bb", group: g2, weight: 4}  
+
+
+  
 
 
