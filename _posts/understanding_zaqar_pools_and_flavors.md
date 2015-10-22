@@ -30,17 +30,21 @@ Now question arise how to attach to a pool, let say you have a queue with name q
 
 ####Registering queues to pools:
 
-This is where **flavors** comes in. A flavor in terms of Zaqar, specify a pool's capability(can be any combination of FIFO, claims, durability, AOD(at least once delivery), hight_throughput). So let say we have following flavors:
-    f1 : {name: "f1", capabilities: ['durability'], group: [g1]}
-    f2 : {name: "f2", capabilities: ['FIFO'], group: [g1, g2]}
-    f3 : {name: "f3", capabilities: ['high_throughput'], group: [g2]}
+This is where **flavors** comes in. A flavor in terms of Zaqar, specify a pool's capability(can be any combination of FIFO, claims, durability, AOD(at least once delivery), hight_throughput). So let say we have following flavors:  
+    f1 : {name: "f1", capabilities: ['durability'], group: [g1]}  
+    f2 : {name: "f2", capabilities: ['FIFO'], group: [g1, g2]}  
+    f3 : {name: "f3", capabilities: ['high_throughput'], group: [g2]}  
+
 and queues:  
-    q1: {name: q1, flavors: [f1, f2]}
-    q2: {name; q2, flavors: [f3, f2]}
+
+    q1: {name: q1, flavors: [f1, f2]}  
+    q2: {name; q2, flavors: [f3, f2]}  
+
 and pools:
-    p1: {name: p1, uri: "xxx/xxx/xx", group: g1, weight: 3}
-    p2: {name: p2, uri: "xxx/xxx/aa", group: g1, weight: 4}
-    p3: {name: p1, uri: "yyy/yyy/yy", group: g2, weight: 3}
-    p4: {name: p1, uri: "yyy/yyy/bb", group: g2, weight: 4}
+
+    p1: {name: p1, uri: "xxx/xxx/xx", group: g1, weight: 3}  
+    p2: {name: p2, uri: "xxx/xxx/aa", group: g1, weight: 4}  
+    p3: {name: p1, uri: "yyy/yyy/yy", group: g2, weight: 3}  
+    p4: {name: p1, uri: "yyy/yyy/bb", group: g2, weight: 4}  
 
 
