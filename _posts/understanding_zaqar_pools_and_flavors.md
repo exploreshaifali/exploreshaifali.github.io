@@ -17,13 +17,16 @@ Each pool have 4 main properties:
 	4. Weight  
 **Name** is the name that you want to give to that pool.  
 **URI** is the endpoint that your pool will have.  
-**Group**, think of it like a tag that you want to given to more than one pool so that it keep you remind the purpose/capabilities of all pools that falls under that pool. Basically very few times a single pool will satisfy you, in most of the cases you will need a group of pools that you will need, so to keep track of all those pools you can assign them into a group. You can consider a pool as a node and a group of pool as clusters of pools that serve some purpose.  
-**Weight** is the priority that you want to give a pool to get register to with a new coming queue. It cab be any integer more -1. That mean 0 is the lowest priority of any pool. So if you don't want a pool to get registered with any coming queue, you can set its weight to 0.	
+**Group**, think of it like a tag that you want to given to more than one pool so that it keeps you remind the purpose/capabilities of all pools that falls under that group. Basically very few times a single pool will satisfy you, in most of the cases you will need a group of pools, and to keep track of all those pools you can assign them into a group. You can consider a pool as a node and a group of pool as clusters of pools that serve some common purpose.  
+**Weight** is the property that allow you set priority of a pool for accepting coming queues. More the weight, more likely it is for a pool to accept the coming queue. It cab be any integer more -1. That mean 0 is the lowest priority of any pool. So if you don't want a pool to get registered with any coming queue, you can set its weight to 0.	
 
 ###Lets visualize things:
 
     1. You have created a queue
     2. Post a message in that queue    
+
+After posting message to a queue, it get stored on a node(pool) on which you have installed your data plane, till the time message does not get expire or is not being destroyed.
+
     3. If you have attached a queue to a pool, message will go to that pool else it will go to default pool.
 
 Now question arise how to attach to a pool, let say you have a queue with name q1 and a pool with name p1. How will you register queue q1 to pool p1 so that all messages that you post to q1 goes to the receiver through pool p1.
@@ -48,7 +51,7 @@ and queues:
     q1: {name: q1, flavors: [f1, f2]}  
     q2: {name; q2, flavors: [f3, f2]}  
 
-Thus while creating a queue you can add existing flavor names that can be a part of some existing group from pools. This is how linking of queues to pool works. A queue will basically get linked to some group via flavor and then will get registered to more likelyhood pool of that group as per weith of the pools in that group.
+Thus while creating a queue you can add existing flavor names to queue that can be a part of some existing group from pools. This is how linking of queues to pool works. A queue will get linked to the group via flavor and then will get registered to more likelyhood pool(the one with max priority and is free to accept more queues) of that group, as per weith of the pools in that group.
 
 
 
