@@ -1,4 +1,4 @@
-Understanding Zaqar Pools and Flavor
+#Understanding Zaqar Pools and Flavor
 
 Here I am answering very common questions that are being asked on zaqar IRC channel(#openstack-zaqar @ freenode): 
 	- What are pools and flavor?  
@@ -10,11 +10,13 @@ Here I am answering very common questions that are being asked on zaqar IRC chan
 
 Pools are containers(that mean storage nodes) which is independent, isolated and contain the messages to transfer. Their main purpose is to provide an easy way to scale Zaqar storage because you can add as many pool as you want. Though as like a node, it is recommended to scale each independent pool as much as possible before adding new ones.
 
-Each pool have 4 main properties:
-	1. Name
-	2. URI
-	3. Group
+Each pool have 4 main properties:  
+
+	1. Name  
+	2. URI  
+	3. Group  
 	4. Weight  
+
 **Name** is the name that you want to give to that pool.  
 **URI** is the endpoint that your pool will have.  
 **Group**, think of it like a tag that you want to given to more than one pool so that it keeps you remind the purpose/capabilities of all pools that falls under that group. Basically very few times a single pool will satisfy you, in most of the cases you will need a group of pools, and to keep track of all those pools you can assign them into a group. You can consider a pool as a node and a group of pool as clusters of pools that serve some common purpose.  
