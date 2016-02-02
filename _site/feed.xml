@@ -5,9 +5,981 @@
     <description>This Blog is about my experiments and experience with technology, computer science and life events.</description>
     <link>http://exploreshaifali.github.io/</link>
     <atom:link href="http://exploreshaifali.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 May 2015 20:24:44 +0530</pubDate>
-    <lastBuildDate>Thu, 28 May 2015 20:24:44 +0530</lastBuildDate>
+    <pubDate>Tue, 02 Feb 2016 20:39:22 +0530</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 20:39:22 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>GSoC Application for Systers Portal Meetup Feature</title>
+        <description>&lt;p&gt;Holla! Here I am sharing my GSoC 2015 application for &lt;strong&gt;Systers, an Anita Borg Institute Community&lt;/strong&gt;, project named - &lt;strong&gt;Systers Portal Meetup Feature&lt;/strong&gt;. They have pre-defined format of application so basically everything below is answers of questions present in their application format.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;profile-links&quot;&gt;Profile links:&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://exploreshaifali.github.io/&quot;&gt;Website&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/exploreshaifali/&quot;&gt;Github&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://twitter.com/exploreshaifali&quot;&gt;Twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.linkedin.com/profile/view?id=257818581&quot;&gt;Linkedin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/+ShaifaliAgrawal&quot;&gt;Google+&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://launchpad.net/~agrawalshaifali09&quot;&gt;Launchpad&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Are you a Syster &lt;a href=&quot;www.systers.org&quot;&gt;(http://www.systers.org/)&lt;/a&gt;? Would you join if you are accepted? (Note: Systers is only open to women in computing; if you are male, you may not join, though you are welcome to join systers-dev, our development list.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes. My join request for Systers is accepted!
+Being a tech enthusiast I always take initiative to meet and interact with different people in same field. And Systers being a women community provide more comfort and emotional support too along with tech knowledge!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How can we reach you (email, IRC, etc.) if we have questions about your application?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To reach me any of the following means can be used(listed priority wise):&lt;br /&gt;
+Email address: agrawalshaifali09[AT SPAMFREE]gmail[DOT]com&lt;br /&gt;
+IRC nick: exploreshaifali&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is your github and/or launchPad username(s):&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Github username: &lt;a href=&quot;https://github.com/exploreshaifali/&quot;&gt;exploreshaifali&lt;/a&gt;&lt;br /&gt;
+Launchad ID: &lt;a href=&quot;https://launchpad.net/~agrawalshaifali09&quot;&gt;agrawalshaifali09&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Project Specific Questions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which Systers GSoC project are you applying for (please submit a separate application for each project):
+[
+Systers GSoC project I am applying for - &lt;a href=&quot;https://github.com/systers/ossprojects/wiki/Meetup%20Features&quot;&gt;Meetup Features&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What do you plan to accomplish over this summer for this project? (Please tell us what project you want to work on, how you will approach that project portion, and what your milestones are. You may want to ask for help from the systers-dev@systers.org list if you have not created project milestones before, or if you are unsure what is realistic to accomplish. GSOC divides the summer in half, and at the midpoint, you are paid if you are reasonably close to the milestones you proposed to reach by then, and again for meeting your milestones at the end of the summer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If your project proposal is accepted, you will have a chance to work with your mentors to revise these milestones, and we always take into account “unforeseen circumstances”, such as discovering that the code you were going to build on top of is incompatible with mailman. However, being able to realistically estimate how much you will be able to accomplish is an important part of this proposal.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;abstract&quot;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Systers used Meetup Everywhere for their global community. However, Everywhere was discontinued in December 2014.&lt;/p&gt;
+
+&lt;p&gt;This project is aimed to develop a web based meetup management application to provide facilities similar to Meetup Everywhere that serve Systers Global Community.&lt;/p&gt;
+
+&lt;h3 id=&quot;motivation-project-impact-on-systers&quot;&gt;Motivation (Project impact on Systers)&lt;/h3&gt;
+&lt;p&gt;We have Systers community portal that help in reducing the communication gap between groups by allowing different groups to share information and get latest news.&lt;/p&gt;
+
+&lt;p&gt;A Meetup management application will be helpful not only for meetup organizers in organizing, managing and controlling meetups but also for members to discuss about coming meetups and participate in meetups smoothly as much as possible.&lt;/p&gt;
+
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;/h3&gt;
+&lt;p&gt;The main goal of this proposal is to provide Systers Global Community a web based solution to manage and control all the global and local meetups that they organize.&lt;/p&gt;
+
+&lt;p&gt;We have four different stakeholders - Administrators,Organizers, Members and Guest. Each one of them have different roles, authorities and responsibilities. The web application should let all the stakeholders perform all their task and activities efficiently with minimum efforts and lots of ease.&lt;/p&gt;
+
+&lt;h3 id=&quot;technology-stack&quot;&gt;Technology Stack&lt;/h3&gt;
+&lt;p&gt;Since this project is to extend some features in &lt;a href=&quot;https://github.com/systers/portal&quot;&gt;systers portal&lt;/a&gt;, tech stake will be same as that of systers portal, that said: Python/Django and postgreSQL.
+For showing map to users, &lt;a href=&quot;https://pypi.python.org/pypi/django-easy-maps&quot;&gt;django_easy_maps&lt;/a&gt; can be used, I have used this app in my past project &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;project-design-details&quot;&gt;Project Design Details&lt;/h3&gt;
+&lt;p&gt;The project needs to add some apps to systers_portal project to fulfill all needs of Systers’ global community that they want in their meetup application.&lt;/p&gt;
+
+&lt;p&gt;We will need to define following database tables:&lt;/p&gt;
+
+&lt;h4 id=&quot;database&quot;&gt;Database:&lt;/h4&gt;
+&lt;p&gt;All attributes marked with &lt;code&gt;*&lt;/code&gt; are mandatory.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;Chapters(local_meetup_groups)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;chapters&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;id* #default primary key&lt;/li&gt;
+      &lt;li&gt;chapter_name*   #unique key&lt;/li&gt;
+      &lt;li&gt;chapter_city*&lt;/li&gt;
+      &lt;li&gt;chapter_country*&lt;/li&gt;
+      &lt;li&gt;status(requested, approved, canceled)*&lt;/li&gt;
+      &lt;li&gt;requested_datetime*&lt;/li&gt;
+      &lt;li&gt;responded_datetime&lt;/li&gt;
+      &lt;li&gt;requested_by_id*    #foreign key from auth_user table&lt;/li&gt;
+      &lt;li&gt;responded_by_id     #foreign key from auth_user table&lt;/li&gt;
+      &lt;li&gt;chapter_description*&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;chaper_organizers&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;id*  #default primary key&lt;/li&gt;
+      &lt;li&gt;chapter_id* #foreign key from chapters table&lt;/li&gt;
+      &lt;li&gt;organizer_user_id* #foreign key from auth_user table&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;chapter_members&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;id*     #default primary key&lt;/li&gt;
+      &lt;li&gt;chapter_id*  #foreign key from chapters table&lt;/li&gt;
+      &lt;li&gt;member_user_id*  #foreign key from auth_user table&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For &lt;strong&gt;meetups&lt;/strong&gt;&lt;br /&gt;
+4. &lt;strong&gt;meetups&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;id*     #default primary key&lt;/li&gt;
+  &lt;li&gt;meetup_datatime&lt;/li&gt;
+  &lt;li&gt;meetup_venu&lt;/li&gt;
+  &lt;li&gt;meetup_short_description*&lt;/li&gt;
+  &lt;li&gt;meetup_long_description&lt;/li&gt;
+  &lt;li&gt;chapter_id*     #foreign key from chapters table&lt;/li&gt;
+  &lt;li&gt;meetup_posted_organizer_user_id*     #foreign key from auth_user table&lt;/li&gt;
+  &lt;li&gt;last_updated_datetime*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This was the basic chapter’s and meetup’s database, as we will add more features in the project, more table will be needed, mentioned below&lt;/p&gt;
+
+&lt;p&gt;For Syster meetup &lt;strong&gt;visitors or guest&lt;/strong&gt;&lt;br /&gt;
+5. &lt;strong&gt;users_systers_meetup_guest&lt;/strong&gt;:  &lt;br /&gt;
+For those who are not systers member but want to attend the meetup, can be a visitor or a guest. This can be implemented like SystersMeetupGuest as we have SystersUser in systers_portal.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;id*     #default primary key&lt;/li&gt;
+  &lt;li&gt;guest_user_id*  #foreign key from auth_user&lt;/li&gt;
+  &lt;li&gt;meetup_id*  #foreign key from meetups table&lt;/li&gt;
+  &lt;li&gt;member_invited_id   #foreign key from auth_user, required only igu est&lt;/li&gt;
+  &lt;li&gt;is_invited    #boolean value&lt;/li&gt;
+  &lt;li&gt;invitation_status(0:invited, 1:accept, 2:reject)*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;meetup sponsors&lt;/strong&gt;&lt;br /&gt;
+Since sponsor can be a Syster member(for which we will have a userid) or a non-member(we don’t have whose data), if she/he is non-syster first need to register in auth_user. This can be implemented like SystersMeetupSponsor as we have SystersUser in systers_portal.  &lt;br /&gt;
+6. &lt;strong&gt;users_systers_meetup_sponsor&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;id*     #default primary key&lt;/li&gt;
+  &lt;li&gt;sponsor_id*     #foreign key from auth_user&lt;/li&gt;
+  &lt;li&gt;meetup_id*  #foreign key from meetups table&lt;/li&gt;
+  &lt;li&gt;amount*&lt;/li&gt;
+  &lt;li&gt;date_of_donation*&lt;/li&gt;
+  &lt;li&gt;is_syster-member*   #boolean value, this will map sponsors(systers or non-systers) to the meetup for which they sponsored and also amount they donated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;RSVP&lt;/strong&gt;&lt;br /&gt;
+7. &lt;strong&gt;meetup_rsvp&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;id* #default primary key&lt;/li&gt;
+  &lt;li&gt;user_id*    #foreign key from auth_user table&lt;/li&gt;
+  &lt;li&gt;meetup_id*  #foreign key from meetup table&lt;/li&gt;
+  &lt;li&gt;is_coming*  #boolean value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;discussion area&lt;/strong&gt;:&lt;br /&gt;
+It will be very similar to the comment model as in blog app of systers_portal.&lt;/p&gt;
+
+&lt;p&gt;We will need to add following &lt;strong&gt;groups and permissions&lt;/strong&gt; in Django auth system:&lt;/p&gt;
+
+&lt;p&gt;Since the need is to design and develop an integrated component of the portal for global community meetups where &lt;strong&gt;Systers administrators can control overall&lt;/strong&gt;, but &lt;strong&gt;more permission controls&lt;/strong&gt; are given to &lt;strong&gt;local community organizers&lt;/strong&gt;, the Systers_admin will have all the privileges, two new groups will be needed:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;group_name&lt;/strong&gt;: permission1, permission2…..&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;meetup_organizers&lt;/strong&gt;: change chapters, create, change, delete meetups, reate, change, delete members, create, change, delete guest, create, change, delete discussions, create, change, delete sponsors&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;meetup_members&lt;/strong&gt;: create discussions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once the database is finalized, I will convert it into Django models.&lt;/p&gt;
+
+&lt;h4 id=&quot;new-apps&quot;&gt;New Apps:&lt;/h4&gt;
+&lt;p&gt;Since Django works on ‘multiple apps in a project’ policy, I am planning to add following different apps and also stating what functionality each app will deliver. Basically this will be the overall architecture of project meetup-features.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;chapters&lt;/strong&gt;: 
+  Manage local meetup groups data and functionality, cover following features:
+    &lt;ul&gt;
+      &lt;li&gt;Admin - create a new Systers meetup location(Chapter)&lt;/li&gt;
+      &lt;li&gt;Admin - Assign meetup organizers&lt;/li&gt;
+      &lt;li&gt;Admin - Receive notification of all new meetup requests, and will able to approve or reject them&lt;/li&gt;
+      &lt;li&gt;Organizers - Submit initial request for new Chapter(meetup location)&lt;/li&gt;
+      &lt;li&gt;Organizers - Manage Chapter Profile&lt;/li&gt;
+      &lt;li&gt;Organizers - Able to post new local meetup&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;meetup&lt;/strong&gt;: 
+Manage data and functionality of all meetups under a chlocal_meetup group). Will cover following tasks:
+    &lt;ul&gt;
+      &lt;li&gt;Organizers - Manage Meetup Profile&lt;/li&gt;
+      &lt;li&gt;Organizers -  Able to manage meetups other than events in a meetup&lt;/li&gt;
+      &lt;li&gt;Organizers - Approve or disapprove invited guests or requestsvisitors to attend the meetup&lt;/li&gt;
+      &lt;li&gt;Organizers - Able to maintain sponsors for a particular meetup&lt;/li&gt;
+      &lt;li&gt;Organizers - Able to maintain logistics of a particular meetup&lt;/li&gt;
+      &lt;li&gt;Member - chapter_member will get mapped with a particular meetup.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;discussions&lt;/strong&gt;:
+It will be similar to a blogging app with extra features thatrequired like Organizers can approve posts, reply to posts etc.
+    &lt;ul&gt;
+      &lt;li&gt;Organizers - manage discussion posts&lt;/li&gt;
+      &lt;li&gt;members - Post to Discussion area&lt;/li&gt;
+      &lt;li&gt;Guests - View Discussion area&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;tasks---urls-views-templates&quot;&gt;Tasks - urls, views, templates&lt;/h4&gt;
+&lt;p&gt;Since for almost each task/feature, we will need at lest one url, view, template; further let use look into details of how will we achieve each feature that needs to be added and their brief detail:&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;Systers Admin&lt;/strong&gt; we need to add:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Manage all organizers and attendees&lt;/li&gt;
+  &lt;li&gt;Create a new Systers Chapter(meetup location)&lt;/li&gt;
+  &lt;li&gt;Assign meetup organizers
+  Since Systers Admins will have all permissions to create, change and delete any thing in chapters, meetup and discussions app, all above features can be achieved from Django admin app without any hassle.&lt;/li&gt;
+  &lt;li&gt;Receive notification of all new meetup location requests
+    &lt;ul&gt;
+      &lt;li&gt;For this a meetup organizer can fill one form putting details of new local meetup group she is requesting for, then using notifications app all Systers admin will receive notification on their dashboard to take actions accordingly.&lt;/li&gt;
+      &lt;li&gt;This will reside in chapters app.&lt;/li&gt;
+      &lt;li&gt;A new button on organizer dashboard(template) to request new chapter(local meetup group), when an organizer click on &lt;code&gt;new chapter&lt;/code&gt; button a form will appear(through a view) to fill the details of new chapter as per the chapters model.&lt;/li&gt;
+      &lt;li&gt;Form get filled, organizer click on submit request button on form and then using notification app a notification will be send to all the Systers admin.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;chapter(local_meetup_group) organizer&lt;/strong&gt; following features are needed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Submit Initial Request for new chapter(local_meetup_group)
+    &lt;ul&gt;
+      &lt;li&gt;This is same as of 4th feature for Systers Admin.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Manage chapter(local_meetup_group) profile
+    &lt;ul&gt;
+      &lt;li&gt;As like a user can edit his profile in sysers_portal similarly organizers will be allowed to edit a chapters profile.&lt;/li&gt;
+      &lt;li&gt;template to edit similar to &lt;a href=&quot;https://github.com/systers/portal/blob/develop/systers_portal/templates/users/edit_profile.html&quot;&gt;syters_portal_users_edit page&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;form similar to &lt;a href=&quot;https://github.com/systers/portal/blob/develop/systers_portal/users/forms.py&quot;&gt;systers_portal_user_form&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Able to post new meetup
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;post new meetup&lt;/code&gt; button on organizer dashboard(template)&lt;/li&gt;
+      &lt;li&gt;a form than will need the entries that are in the meetup model.&lt;/li&gt;
+      &lt;li&gt;On submitting form a new meetup get posted&lt;/li&gt;
+      &lt;li&gt;A new page for recently posted meetup will get generated whose link will be available on Systers meetup page and that chapter page for which meetup is posted&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Manage Meetup Profile
+    &lt;ul&gt;
+      &lt;li&gt;As like a user have option to edit his profile, similarly one &lt;code&gt;edit meetup profile&lt;/code&gt; button will appear on organizer dashboard.&lt;/li&gt;
+      &lt;li&gt;A new template and form for letting organizers edit meetup profile will need.&lt;/li&gt;
+      &lt;li&gt;It will reside inside meetup app.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Identify all members as Systers or Guest
+    &lt;ul&gt;
+      &lt;li&gt;Organizers will able to look at list of all those who are attending(or requested to attend) the coming meetup and in that list they can also see if a member is a Syster or a guest by a lable &lt;code&gt;S or G&lt;/code&gt; respectively attached with each person’s detail.&lt;br /&gt;
+    Also organizers can look at list of only those women who are Systers and who are guest separately.
+    Also whenever an organizer look at profile of any other member they will see if a person is a Syster or a guest.
+    For this one check will be needed that the user is a SysterUser or not.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Able to manage local meetup logistics
+    &lt;ul&gt;
+      &lt;li&gt;meetup logistics include - venue, volunteers(meetup members), sponsorship&lt;/li&gt;
+      &lt;li&gt;while adding new meetup or editing meetup profile, an organizer can alter/manage these things&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Be notified of all incoming join requests and Approve all Meetup join requests
+    &lt;ul&gt;
+      &lt;li&gt;A meetup page is visible to everyone, a visitor/guest can look it, and also request for attending the meetup.&lt;/li&gt;
+      &lt;li&gt;A button on meetup page for visitors to request to attend the meetup&lt;/li&gt;
+      &lt;li&gt;Using notification app all organizers get notified for a new request for joining meetup and they can respond on it.&lt;/li&gt;
+      &lt;li&gt;Accordingly visitors will get notification as per organizer respond.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Manage discussion
+    &lt;ul&gt;
+      &lt;li&gt;Discussions can be allowed at chapters page as well as on each coming meetup page.&lt;/li&gt;
+      &lt;li&gt;Very similar to comments in blog app of systers_portal.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;chapter(local_meetup_group )members&lt;/strong&gt; following features are needed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit Profile
+ Being a Syster member they are allowed to edit their profile.&lt;/li&gt;
+  &lt;li&gt;Post to Discussion area
+ chapter members will have privilege to post of discussion area, like any other Syster member is allowed to comment on blog.&lt;/li&gt;
+  &lt;li&gt;Invite a guest to meetup
+ by clicking on “invite guest” button on meetup page, members are allowed to add details of guest they want to invite
+   organizers will get a notification using notification app
+   if organizer approved the request, guest will get notification&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;guests/visitors&lt;/strong&gt; following features are needed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit Profile
+ This can be implemented in similar manner as systers_portal users edit profile work, with only difference of model.&lt;/li&gt;
+  &lt;li&gt;View Discussion area
+ As like other systers members they are also allowed to view discussion area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;list-of-templates&quot;&gt;List of templates&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;meetup_organizer dashboard that will contain:
+    &lt;ul&gt;
+      &lt;li&gt;button to add new chapter&lt;/li&gt;
+      &lt;li&gt;button to add new meetup&lt;/li&gt;
+      &lt;li&gt;button to edit chapter profile&lt;/li&gt;
+      &lt;li&gt;button to add new members to chapter&lt;/li&gt;
+      &lt;li&gt;notifications button to see all notifications&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Systers meetup page
+    &lt;ul&gt;
+      &lt;li&gt;show all latest coming meetups of different chapters&lt;/li&gt;
+      &lt;li&gt;show list of all meetups help in past in different chapters&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Chapters profile page
+    &lt;ul&gt;
+      &lt;li&gt;show list of all coming and past meetups of that particular chapter&lt;/li&gt;
+      &lt;li&gt;list of organizers of that chapter&lt;/li&gt;
+      &lt;li&gt;discussions related to chapter meetups&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;meetup page
+    &lt;ul&gt;
+      &lt;li&gt;contain details of a particular meetup&lt;/li&gt;
+      &lt;li&gt;will able to take RSVP&lt;/li&gt;
+      &lt;li&gt;list of members of that meetup&lt;/li&gt;
+      &lt;li&gt;a button for visitors to request to attend the meetup&lt;/li&gt;
+      &lt;li&gt;a button for sponsors to offer sponsorship for that meetup&lt;/li&gt;
+      &lt;li&gt;a button for organizer to edit meetup_profile&lt;/li&gt;
+      &lt;li&gt;discussions related to a particular meetup&lt;/li&gt;
+      &lt;li&gt;invite guests button for organizers and meetup members&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;add new meetup/edit meetup profile&lt;/li&gt;
+  &lt;li&gt;add new chapter/edit chapter profile&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;milestones&quot;&gt;Milestones&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Front end &lt;strong&gt;mockups&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Systers super &lt;strong&gt;admin panel&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Providing all CRUD features to super admin for chapters, meetups, chapter organizers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Meetup &lt;strong&gt;Organizer Dashboard&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;organizer should be able to add,edit new chapter&lt;/li&gt;
+      &lt;li&gt;organizer should be able to add,edit,delete new meetups&lt;/li&gt;
+      &lt;li&gt;organizer should be able to add,edit,delete members to the chapter&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RSVP&lt;/strong&gt; feature to meetup pages
+    &lt;ul&gt;
+      &lt;li&gt;users including admin, organizer, member, guest/visitor will able to RSVP if they are attending the meetup or not&lt;/li&gt;
+      &lt;li&gt;result of RSVP will be visible on meetup page for all users&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Notification&lt;/strong&gt; facility for chapter approval
+    &lt;ul&gt;
+      &lt;li&gt;Up till now organizer is able to add new chapter by itself but by adding this feature new chapter will be added only after admin approval&lt;/li&gt;
+      &lt;li&gt;Admin get notification of organizer request to add new chapter and will able to approve/disapprove the request&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Facilitating &lt;strong&gt;visitors/guest&lt;/strong&gt; to request/invite to join the meetup
+    &lt;ul&gt;
+      &lt;li&gt;A visitor can request to attend a particular meetup and organizer of that particular meetup chapter will able to approve/disprove&lt;/li&gt;
+      &lt;li&gt;Meetup member, organizer will able to invite guests to attend meetup&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sponsors feature&lt;/li&gt;
+  &lt;li&gt;Discussion Area&lt;/li&gt;
+  &lt;li&gt;Final Demo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;timeline&quot;&gt;TIMELINE&lt;/h3&gt;
+
+&lt;table border=&quot;1&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tasks&lt;/th&gt;
+      &lt;th&gt;Milestone covered&lt;/th&gt;
+      &lt;th&gt;Week&lt;/th&gt;
+      &lt;th&gt; Date &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;ul&gt;&lt;li&gt;Finalizing Database and architecture of project by finalizing different apps needed &lt;/li&gt;&lt;li&gt; Designing Mockups  (My college exams will be running till May first week, so I will be a bit slow these days)&lt;/li&gt;&lt;/ul&gt; &lt;/td&gt;
+      &lt;td&gt;Milestone-1 Mockups&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1-7 May&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Initial Setup, initializing default apps&lt;/li&gt;
+          &lt;li&gt;Defining models for chapters and meetup&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;
+       2
+      &lt;/td&gt;
+      &lt;td&gt;8-14 may&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Defining models for chapters and meetup&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;15 May&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Attending OpenStack summit(if get visa)&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;3-4&lt;/td&gt;
+      &lt;td&gt;16-25 may&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Writing tests for models&lt;/li&gt;&lt;li&gt;Admin should be able to perform all CRUD functionality for chapter and meetup apps&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-2 Systers super admin panel&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;4&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;26-28 May&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Starting coding for organizers dashboard, since the organizer will be a syster member we don&#39;t need to code for login/logout just need to check if a user is an organizer or not, writing code for views and forms for adding a chapter, editing chapter, front end for dashboard&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Start Mileston 3&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;5&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;29May - 4 June&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;writing tests for views and forms of adding and editing chapters&lt;/li&gt;&lt;li&gt; writing views, forms for adding, editing a meetup in a chapter&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt; &lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;6&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;4 - 10 June&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Front end for adding, editing meetup, generating a new page for each new meetup&lt;/li&gt;Documentation&lt;li&gt;Code review&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Half of milestone 3 covered&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;7&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;11-17 June&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Adding, editing new chapters and new meetups should be ready!&lt;/li&gt;&lt;li&gt;Filling Gap, reviewing code, fixing test, code, bugs, documentation&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Filling Gap&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;8&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;18-23 June&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Mid - term Evaluation&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt; &lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;8&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;24-June&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Views, template, test for adding new members to chapters&lt;/li&gt;&lt;li&gt;code review&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-3-Organizer dashboard&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;9&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;25June - 1 July&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;First version of organizer&#39;s dashboard should be ready.&lt;/li&gt;&lt;li&gt;Deciding and writing models for RSVP feature&lt;/li&gt;&lt;li&gt;Test for models&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt; &lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;10&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;2-8 July&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;View for RSVP feautre&lt;/li&gt;&lt;li&gt;Modifying meetup template for RSVP&lt;/li&gt;&lt;li&gt;Test of RSVP views, documentation&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-4-RSVP feature&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;11&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;9-15 July&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Implementing notification feature for admin to add new chapter&lt;/li&gt;&lt;li&gt;Notifications for organizer to approve requests of visitors to attend the meetups&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-5-Notification feature&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;12&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;16-22 July&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Views, forms for visitors to attend the meetup&lt;/li&gt;&lt;li&gt;Template for visitors to fill their details&lt;/li&gt;&lt;li&gt;Tests, documentation, code review&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-6-Vsitors/Guest&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;13&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;23-29July&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Writing model for sponsors, test cases for these models&lt;/li&gt;&lt;li&gt;View, template for sponsors, test cases for view, documentation&lt;/li&gt;&lt;li&gt;Models for discussion area, test cases for models&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-7-Sponsors feature&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;14&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;30July-5Aug&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;View for discussion&lt;/li&gt;&lt;li&gt;Template for discussion&lt;/li&gt;&lt;li&gt;Tests and documentation for discussion area, code review&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-8-Discussion Area&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;15&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;6-13 Aug&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;&lt;ul&gt;&lt;li&gt;Tesing, code optimization&lt;/li&gt;&lt;li&gt;Final testing, Documentation, bug fixing&lt;/li&gt;&lt;li&gt;Preparing Demo&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Milestone-9 Demo&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;16&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;14-20 Aug&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Final Evaluation&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Filing Gap, final evaluation&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;17&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;21-27 Aug&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;Proofs&lt;/strong&gt; that I have &lt;strong&gt;deployed&lt;/strong&gt; Portal locally and are able to run the project and the tests:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://imgur.com/vRuvVBU&quot;&gt;Systers Portal running locally&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://imgur.com/gallery/XQGLME1/new&quot;&gt;Systers Portal Admin running locally&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gyazo.com/7d3e93272666b8b6d71637925920569a&quot;&gt;Tests Running properly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Have you used PHP, MySQL, Python/Django, Ruby/Rails and/or other frameworks? If so, please elaborate on what project/assignment you used these development tools.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes! Since I love programming in &lt;strong&gt;Python&lt;/strong&gt; and have interest in &lt;strong&gt;web development&lt;/strong&gt; the very first web development framework I chose to try and learn was &lt;strong&gt;Django&lt;/strong&gt;. First I started with writing scripts for small tasks like database cleaning, searching text in a file using regex, fetching content of a site using request, url lib and many more.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;One script I wrote in Python for &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/web-scraping-for-food-trucks.ipynb&quot;&gt;scraping data of food trucks&lt;/a&gt; from web.&lt;/li&gt;
+  &lt;li&gt;One script I wrote in Python to demonstrate how &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/github%20API%20to%20access%20Public%20Data.ipynb&quot;&gt;github API works with python&lt;/a&gt; to fetch users data.&lt;/li&gt;
+  &lt;li&gt;Then I started sharing my knowledge of Python with other, taking workshops, building projects. One of my ongoing Python based project is &lt;a href=&quot;https://github.com/curioswati/Gitoscope&quot;&gt;Gitoscope&lt;/a&gt;,  developing it just for fun(and also because I have keen interest in git and github). It will give a horoscope of a user on github, based on github data. It is being developed in Python, D3.js and github APIs.&lt;/li&gt;
+  &lt;li&gt;Continuous learning and having keen interest in Python, I got a chance to work for &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt;’s Zaqar component as an &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outreachy&lt;/a&gt;(previously known Outreach Program for women) intern. OpenStack is developed in Python and for my project while the internship too I got a chance to work in Python. I rebuild and reframe Zaqar internals by splitting its control and data layer completely. Brief details about project &lt;a href=&quot;https://wiki.openstack.org/wiki/Internship_ideas#Zaqar:_Split_data.2Fcontrol_planes&quot;&gt;here&lt;/a&gt;. My contribution for OpenStack can be looked at &lt;a href=&quot;https://review.openstack.org/#/q/owner:shaifali,n,z&quot;&gt;OpenStack reviewer&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Recently I developed a web app for a &lt;a href=&quot;https://www.hackerearth.com/&quot;&gt;HackerEarch&lt;/a&gt; women’s day hackathon &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; using Django and Twitter Bootstrap. The app basically help users to find NGOs near to them so that they can help the needy!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;General Development and Education Questions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why do you think you are a good candidate for these projects? Describe the skills you confidently bring to the project, and what you hope to learn from working on this project, and your interest in the Systers mission.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have multiple concrete reasons to work on this project:&lt;/p&gt;
+
+&lt;h4 id=&quot;my-interest&quot;&gt;My Interest&lt;/h4&gt;
+&lt;p&gt;The very first reason is that the project is related to web development( Python+Django+database) that is something I am highly interested in. Working on python Django and databases always makes me happy. Website is a communication medium with others and I think I can communicate with others very well through my coding skills.
+Another reason is that this project demands to build something from scratch, it is not something to modify an existing functionality rather add new features so I have to write whole code from ‘start to end’ and this will let me learn a lot!&lt;/p&gt;
+
+&lt;h4 id=&quot;past-experience&quot;&gt;Past Experience&lt;/h4&gt;
+&lt;p&gt;I already have an experience of similar program - &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outreachy&lt;/a&gt;(previously known as Outreach Program for Women) where I worked on a project with running my college in parallel, it was “winter of code” for me. So being committed to the project(and timeline) and working hard for it is what am aware about very well.&lt;/p&gt;
+
+&lt;p&gt;I have build a web app in 4 days &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; for a hackathon on world women’s day that let users find NGO near to them so that they can help needy. So again committing with time and working hard for project is what I am well aware of.Thus for Systers Meetup Features also I will able to work without hassle.&lt;/p&gt;
+
+&lt;h4 id=&quot;motivation&quot;&gt;Motivation&lt;/h4&gt;
+&lt;p&gt;I have been working as &lt;strong&gt;Python&lt;/strong&gt; Developer and Analyst at &lt;a href=&quot;http://iips.edu.in/dc&quot;&gt;Development Center&lt;/a&gt;(DC, a section in my college) along with my college studies. There we took lots of initiative to bring people more close to technology. Like I have taken workshop for Python, HTML, CSS, Linux for my college students. Also we went to villages to teach girls about basics of computers. This shows my motivation towards computer science and technology and also towards bringing people(specially women) closer to technology.&lt;/p&gt;
+
+&lt;h4 id=&quot;systers-mission&quot;&gt;Systers Mission&lt;/h4&gt;
+&lt;p&gt;This is well known that ratio of Women in technology is very less comparative to Men. Reason is not that women are not capable, they are! it is that “they does not participate”.
+Systers Mission to “increase the number of women in computer science and make the environments in which women work more conducive to their continued participation in the field.” is what I immensely support! As I have mentioned above I took initiative to teach village girls about computers. Looking at the happiness and satisfaction on the face of those girls gave feelings that are something way beyond the imagination. We need to bring more and more women close to technology and computer science.
+Women need to believe that they are awesome! They can stand along with any other men in the world and give them tough competition!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have various projects in Python, Ruby, Android, iOS and Ushahidi. Describe the largest project you have completed in any of the programming languages mentioned. If you haven’t used any of the programming languages, describe the programming experience you have that will allow you to learn a programming language quickly and be successful on this project.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Programming in Python is something I enjoy a lot! Python is my primary language for any dam task I want to code for! I took few workshops on Python because I wanted to share my knowledge of Python with others and want them also know and realize how awesome it is! Being easy, enormous library support, fits in any field you want, strong community it allow students to develop applications easily, convert their ideas into reality without much hassle.&lt;/p&gt;
+
+&lt;p&gt;Following are the projects based on Python, I worked for:
+  1. &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; Zaqar(being an &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outreachy&lt;/a&gt; intern): Zaqar is a messaging and queuing service. I re-architect the storage layer of Zaqar by separating its control and data plane completely. This is my first Open Source contribution and it is in Python. Here are my contributions for at &lt;a href=&quot;https://review.openstack.org/#/q/owner:shaifali,n,z&quot;&gt;OpenStack reviewer&lt;/a&gt;.  Brief &lt;a href=&quot;https://wiki.openstack.org/wiki/Internship_ideas#Zaqar:_Split_data.2Fcontrol_planes&quot;&gt;details&lt;/a&gt; about Project while internship.
+  2. &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; web based application, developed for a HackerEarth hackathon in 4 days developed in Python Djago, Twitter Bootstrap, Google Places API.
+  3. &lt;a href=&quot;https://github.com/curioswati/Gitoscope&quot;&gt;Gitoscope&lt;/a&gt;: An application to show a user’s performance on his/her github account. It is an ongoing project and I work for it in my free time. Tech Stack in which this project is developing are Python, Github APIs, D3.js
+  4. I wrote &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/web-scraping-for-food-trucks.ipynb&quot;&gt;script&lt;/a&gt; to scrap food trucks’ data.
+  5. I wrote &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/github%20API%20to%20access%20Public%20Data.ipynb&quot;&gt;script&lt;/a&gt; to demonstrate who github API can be used using Python without any other library.
+  6. My more hacks in Python can be found at my &lt;a href=&quot;https://github.com/exploreshaifali/&quot;&gt;github profile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We use GitHub and LaunchPad for our projects.Do you have experience with any version control software?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes! Version controlling systems became a prerequisite for contributing to open source world. One should be aware of it, if she/he want to contribute to open source. All my projects are on github. I am very well familiar with it and with git internals too. In fact I am a big git fan. I use github on daily basis to keep my code version, on cloud so that I can access it from anywhere I want and also to share the code with other team members and the world.&lt;/p&gt;
+
+&lt;p&gt;While contributing for OpenStack I got familiar with LaunchPad too.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Describe any plans you have over the time period of GSOC (including the community bonding period) in addition to GSoC, such as classes, a summer job, vacation plans, master’s thesis, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Not any concrete Plan, but since I got travel grant from &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; Foundation to attend a 5 days &lt;a href=&quot;https://www.openstack.org/summit/vancouver-2015/&quot;&gt;design summit&lt;/a&gt; in Vancouver Canada, if I will get my Visa approved for Canada I won’t be able to work on project for approximately one week from 16-25 May.&lt;/p&gt;
+
+&lt;p&gt;I have scheduled the timeline for project accordingly.&lt;/p&gt;
+
+&lt;h3 id=&quot;education&quot;&gt;Education:&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What year are you in school?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am in fifth year of an integrated(10+2+6) masters program in my college.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What programming courses have you taken?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Apart from C, C++ and Java,Algorithms, relational databases. Linux courses in my college I have taken various courses on Python, Programming, Databases, DataScience from various MOOCs offering sites like &lt;a href=&quot;https://www.coursera.org/&quot;&gt;Coursera&lt;/a&gt;, &lt;a href=&quot;https://www.edx.org/&quot;&gt;edx&lt;/a&gt;, &lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt; and self learning tutorials like &lt;a href=&quot;https://www.codecademy.com/&quot;&gt;codeacademy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What did you like about them? What did you not like?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The first language that I learned was C. Writing programs in C was full of fun task for me. Then I have learned other languages, various concepts and fundamentals of computer science. I still remember while taking algorithms classes I got to know how a Fibannaci series program can be implemented in different ways using iterative approach, recursive approach, dynamic programming, matrix optimization approach and how the programs’ time complexity can vary from exponential to O(n) to Log(n).&lt;/p&gt;
+
+&lt;p&gt;Also it feels great when you know/realize power of softwares, very best example I have is of git(I am a big git fan!), for Linus Torvalds it is nothing more than a source control management system. But then things like github came up, they let people share their code with others, practice collaborative development, looking at history of the code and project, participating and contributing for someone else’s project. It has changed the way how open source communities work. It put developers/coders/programmers around the globe together!&lt;/p&gt;
+
+&lt;p&gt;The thing that I don’t like is we as a student are forced to study all the subjects in curriculum(in Indian education). The subjects that I don’t like much like Analog electronics, linear electronic systems etc are also part of my studies no matter I like to study about them or not.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is your major?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Computer Science&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why have you chosen that?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I believe Technology and Computer Science is something that is not just amazing,but also involved in each and every part of our life. It plays a role in how we order/cook food to how we connect to thousands of people in the world. It holds a vital part in almost all the activities we do in our life. It have power to change the world, change the culture, change the thinking of people, making the lives more better.&lt;/p&gt;
+
+&lt;p&gt;I strongly believe everyone should learn about technology and be a part of tech world. And best part is there is nothing hard in it. If someone is interested in arts they can use technology and CS, if someone interested in share markets they can use technology and CS, if someone interested in cars they can use technology and CS. I believe if a person understand technology and is close to it he/she has a power of changing things  and world for themselves as well as for other people.&lt;/p&gt;
+
+&lt;p&gt;So this is the reason why I chose it! I am highly passionate about building the tools/software/applications that people want, that can make their life better and easier.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Have you done group projects (programming or otherwise)?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes. Lot many!
+  * Being an &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; intern(under &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outreachy&lt;/a&gt; program, my first open source contribution, more detailing is below under my FOSS contributions), I worked with whole Zaqar team and witOpenStack hackers.
+  * Developed a mobile responsive web app &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; in group of two.
+  * Being a part of &lt;a href=&quot;http://iips.edu.in/dc&quot;&gt;DC&lt;/a&gt;(a section in my college) I have learned importance of a team. I realized that happiness and success of all team members is as much important as of yours. I realized one can’t move ahead alone. Its the team that support you, nourish you, help you, myou to keep moving ahead to achieve the goal.
+There I have worked in group for following projects:&lt;br /&gt;
+&lt;a href=&quot;http://iips.edu.in/&quot;&gt;IIPS website&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/iips-dc/bonafied-automation&quot;&gt;Bonafide Automation&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What was your primary contribution to/role in the group?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Following are the projects in which I worked in group:&lt;/p&gt;
+
+&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;17&quot;&gt;&lt;b&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Project&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;b&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;My Role&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;32&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;OpenStack Zaqar&lt;/font&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Intern&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;47&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Help The Needy!&lt;/font&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Partner(Every thing from start to end I and my partner decided collaboratively.)&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;17&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Gitoscope&lt;/font&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Team Leader&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;32&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Bonafide Automation&lt;/font&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Team Leader&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&quot;left&quot; height=&quot;17&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;IIPS Website&lt;/font&gt;&lt;/td&gt;
+      &lt;td align=&quot;left&quot;&gt;&lt;font face=&quot;Liberation Serif&quot;&gt;Team Member(Database Engineer)&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What made working in a group better than alone? What made it harder?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;As I mentioned few above, working in a group/team have lots of benefits.
+    &lt;ul&gt;
+      &lt;li&gt;By looking at efforts and work of team mates one get lots of motivation and it inspire to work more.&lt;/li&gt;
+      &lt;li&gt;Working in a team let one learn new technical and behavioural things from teammates that is not possible being alone(peer learning). Even one get to learn the skills that he/she didn’t know about.&lt;/li&gt;
+      &lt;li&gt;One get lots of emotional support from teammates.&lt;/li&gt;
+      &lt;li&gt;Sometimes one get chance to lead thus also develop leadership quality.&lt;/li&gt;
+      &lt;li&gt;Since more members are involved project can be completed in short period.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What make it harder:
+  Again being a part of DC I have been involved in many projects(all group projects) that are not completed and left in between or if completed are not in use. Yes all those are our failed projects but we all got to learn how to work in team from those failed projects. The things that make it harder to work in a group/team are:
+    &lt;ul&gt;
+      &lt;li&gt;Communication Gap between team members .&lt;/li&gt;
+      &lt;li&gt;Different personal goals of each individuals. All group members are not committed to work for common goal.&lt;/li&gt;
+      &lt;li&gt;Conflicts/Arguments in the views may occur.&lt;/li&gt;
+      &lt;li&gt;Less involvement of one member than other.&lt;/li&gt;
+      &lt;li&gt;Authority Struggle, sometimes members struggle for power and authority and thus forget the main goal of developing product.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Do you have work experience in programming? Tell us about it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes!&lt;br /&gt;
+Since the past four years I am studying computer science subjects and practicing programming. Programming in Python is a thing that I enjoy a lot. My past experiences in various projects are already mentioned above but I will put them here again. Here is the list of my past programming experience:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I worked as an  &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; intern for Zaqar component under &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outerachy&lt;/a&gt; program(previously known as Outreach Program for Women). Look at &lt;a href=&quot;https://wiki.openstack.org/wiki/Internship_ideas#Zaqar:_Split_data.2Fcontrol_planes&quot;&gt;brief detail&lt;/a&gt; of my project.  Basically I re-architect the storage layer of Zaqar such that its control and data part are fully separate now. My contributions for OpenStack can be glanced at &lt;a href=&quot;https://review.openstack.org/#/q/owner:shaifali,n,z&quot;&gt;OpenStack reviewer&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I build a web app &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; for a hackathon on Women’s Day.&lt;/li&gt;
+  &lt;li&gt;I am developing a web app &lt;a href=&quot;https://github.com/curioswati/Gitoscope&quot;&gt;Gitoscope&lt;/a&gt; to generate git-horoscope of a user using github data.&lt;/li&gt;
+  &lt;li&gt;I wrote various Python script just for fun, like one is for web scraping, &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/web-scraping-for-food-trucks.ipynb&quot;&gt;fetching data of food trucks&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Another one is for using github APIs to &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/github%20API%20to%20access%20Public%20Data.ipynb&quot;&gt;fetch data of github user&lt;/a&gt; including their repos, issues they are connected with, lines of code, commits they made etc.&lt;/li&gt;
+  &lt;li&gt;My few other hacks can be found at my &lt;a href=&quot;https://github.com/exploreshaifali/&quot;&gt;github profile&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Do you have previous open source experience? Tell us what you have done.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I am a big FOSS lover, I am a big FOSS lover, in 2012 my college senior(GSoC alumni) introduced me to the new world on Computer Science - “Open Source” since than I was looking forward to write open source code. I am grateful to Gnome Foundation that they run &lt;a href=&quot;https://wiki.gnome.org/Outreachy/&quot;&gt;Outreachy&lt;/a&gt; program(previously known as Outreach Program for Women) under which I worked as &lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; intern (Outreachy round 9 from November 2014 to March 2015). Brief &lt;a href=&quot;https://wiki.openstack.org/wiki/Internship_ideas#Zaqar:_Split_data.2Fcontrol_planes&quot;&gt;explanation&lt;/a&gt; about project. During my internship I have learned about the Zaqar’s(messaging and queuing service) storage layer implementation and was able to apply my knowledge and ideas for re-architecture of its drivers(data and control driver of storage layer) with the help of &lt;a href=&quot;http://www.flaper87.com/&quot;&gt;flaper87&lt;/a&gt; (my mentor during internship) and other Zaqar developers. While working for Zaqar I got to learn about many new tools, techniques, concepts and practices used in real world software development. My commits for OpenStack can be glanced at &lt;a href=&quot;https://review.openstack.org/#/q/owner:shaifali,n,z&quot;&gt;OpenStack Revwier&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;For &lt;a href=&quot;https://www.hackerearth.com/&quot;&gt;HackerEarth&lt;/a&gt; hackathon I along with my partner developed a web app - &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Help The Needy!&lt;/a&gt; that help users in helping the Needy by finding NGO near to them. We publish this application under open source MIT Licence. Technology stack used for this project are Django1.6, Twitter Bootstrap and Google’s Places API. The first version of project is completed and now I work for it more only in my free time.&lt;/li&gt;
+  &lt;li&gt;I am an active Python Developer and Analyst at a section in my college named &lt;a href=&quot;http://iips.edu.in/dc&quot;&gt;Development Center&lt;/a&gt;(DC). I have explored many different fields of computer science there like Data Science, Cloud Computing, Web and Desktop application Development etc. I have worked on few projects(&lt;a href=&quot;http://iips.edu.in/&quot;&gt;Bonafide Automation&lt;/a&gt; and &lt;a href=&quot;https://github.com/iips-dc/bonafied-automation&quot;&gt;IIPS website&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tell us one interesting fact about yourself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Considering the fact that women participate less not only in Technology but in any other Leadership activities too, as a women I feel sad and always dream to change this scenario.&lt;/p&gt;
+
+&lt;p&gt;We all know the famous line “Behind every successful man there is a woman”. Here Men give credit to Women because they want more support from women. By giving credit to women they ensure that in future also they will get equal or even more support from women for their success. Why can’t we do something vice-versa? Let us also give credit to men for a woman’s success. Let us also say - “Women need support of Men to be successful”. By saying this somehow we force men to support women and let them work hard to be successful. Now it will be a men’s failure if less women are successful because it is men who are lacking at something(supporting element) not only women.&lt;/p&gt;
+
+&lt;p&gt;Since Systers mission is to bring women closer to technology, it is something fascinate me, motivate me. Apart from fact of my interest in &lt;a href=&quot;http://nbviewer.ipython.org/github/exploreshaifali/Programming/blob/master/web-scraping-for-food-trucks.ipynb&quot;&gt;Python&lt;/a&gt; &lt;a href=&quot;http://help-the-needy.herokuapp.com/&quot;&gt;Django&lt;/a&gt; web development or my &lt;a href=&quot;https://review.openstack.org/#/q/owner:shaifali,n,z&quot;&gt;past experiences&lt;/a&gt; in Open Source, this is also a reason why I want to work for this project. I will be happy if I could build something that can help a community that want women to become successful in computer science and leadership. Also I would love to continue my contribution for Systers even after GSoC.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 24 Aug 2015 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2015/08/24/GSoC-application-for-systers-portal-meetup-feature/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2015/08/24/GSoC-application-for-systers-portal-meetup-feature/</guid>
+        
+        <category>openstack</category>
+        
+        <category>outreachy</category>
+        
+        <category>opw</category>
+        
+        <category>event</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>HackIndia 2015</title>
+        <description>&lt;p&gt;I got to know about India’s largest hackathon of this year &lt;a href=&quot;https://hackindia.io/&quot;&gt;hackIndia 2015&lt;/a&gt;. Well, at least it supposed or claimed to be that. Though I was late but anyhow I managed to get all the tickets to be part of this event. I was super excited as it was going to be my first hackathon for which I was traveling to another city and state.&lt;/p&gt;
+
+&lt;h3 id=&quot;positive-points&quot;&gt;Positive Points&lt;/h3&gt;
+&lt;p&gt;It was a new experience to meet new people, work together, collaborate with them to form a team and build a product. I met teammates who were strangers before, we formed a team and were the only “all girls” team there, and hence people were noticing and appreciating it. We built an application &lt;a href=&quot;http://devpost.com/software/sos-solidarity-of-sisters-6qaoyx&quot;&gt;Solidarity of Sisters&lt;/a&gt; which is aimed to help females who are subjected to any crime. This application led us to the final part, presentation round of hackathon. There were totally 5 batches for this round and each batch had 15 teams. We managed to present our application and got positive feedbacks from judges.&lt;/p&gt;
+
+&lt;h3 id=&quot;negative-points-that-gave-positive-learning&quot;&gt;Negative points that gave Positive learning&lt;/h3&gt;
+&lt;p&gt;Being one of those who stayed till end of the event, I learned “how not to do things, the hard way”. There was a lot of mismanagement. There was a lesson to observe and learn at each and every step, what not to do while conducting such a large hackathon. Overall 800 people participated and many of them left the event in between because of lack of proper management. I learned how to make arrangements for providing accommodation to let participants sleep at night and for food on time. Making a proper balance of capability of providing internet and accepting number of applications is necessary to take in account before anything else. No doubt with power comes huge responsibility. I realized and learned that if you are making huge claims then you should work enough hard to plan and execute them to meet those claims.&lt;/p&gt;
+
+&lt;p&gt;So I got less out of the hackathon because I was expecting a lot. But I learned new things which I wasn’t expecting. I realized my capabilities of building an application without internet. And got many lessons to conduct a hackathon or any event in a better way. I am looking forward to move ahead and participate in more hackathons to learn more both expectedly and unexpectedly.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 22 Aug 2015 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2015/08/22/hackindia-2015/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2015/08/22/hackindia-2015/</guid>
+        
+        <category>hack</category>
+        
+        <category>hackathon</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>OpenStack Day India 2015</title>
+        <description>&lt;p&gt;This post is dedicated to talk about an event &lt;a href=&quot;http://www.meetup.com/Indian-OpenStack-User-Group/events/223574830/&quot;&gt;OpenStack Day India 2015&lt;/a&gt;. I gave a talk there, so this post also contains experience of giving my first talk for OpenStack and Outreachy in public.&lt;/p&gt;
+
+&lt;p&gt;It was an amazing experience to be a part of OpenStack Day India 2015. It reminded me of &lt;a href=&quot;https://www.OpenStack.org/summit/vancouver-2015&quot;&gt;last OpenStack summit&lt;/a&gt;(17-22 May 2015). I got to learn things about OpenStack which I was not aware of. I was the only girl who was presenting a talk there, so was nervous but more excited because I was supposed to talk about my experience of ‘&lt;a href=&quot;http://exploreshaifali.github.io/talks/6-8-2015-outreachy-with-OpenStack-zaqar.html#/cover-page&quot;&gt;Outreachy with OpenStack Zaqar&lt;/a&gt;’. Also I got to meet many people there, few were the same whom I met in summit but many were new faces which made me happy. I met with many girls whom I have encouraged to participate in Outreachy and I also realized that so many people from India are involved with OpenStack.&lt;/p&gt;
+
+&lt;p&gt;It was a two days event. Day one was devoted to hands-on sessions and day two was full of talks by different people(&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1PTDUhhP-ntDyJSEqEyMOCGsD0sJ0sg2ofXgauiyvWJ8/edit#gid=0&quot;&gt;agenda&lt;/a&gt;). Two panels were running in parallel so I had to make tough choices on which talk to attend and which to leave. Let me talk about each day.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-one&quot;&gt;Day One&lt;/h3&gt;
+&lt;p&gt;Day One was full of practical knowledge, hands-on sessions. There was a team of organizers who presented topics one by one. First they gave an overview of OpenStack and its main components, for totally naive people to get comfortable. Then they taught ‘multi-node deployment’ of OpenStack with very basic three nodes architecture(Controller, Network and Compute).&lt;/p&gt;
+
+&lt;p&gt;During this I got to know how exactly each component talks to the other and how a part of a component talks to the other parts of the same component. The essence is when two components talk to each other they make API calls and when one part of component talk to other part of same component they use some messaging/queuing services to send and receive messages. Obviously there is no hard and fast rule, in most of the cases this happens. Since OpenStack installation needs many things to get installed, the presenters were explaining about each and every software/tool that we were installing, why they were needed and what their functionalities were. This shed light on loads of new things for me.&lt;/p&gt;
+
+&lt;p&gt;Then they talked about ‘Getting Started with OpenStack development’. I was aware of most of the things presented in this session but I was enjoying by cross-checking everything I knew and what the presenter was speaking.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-two&quot;&gt;Day Two&lt;/h3&gt;
+&lt;p&gt;I was filled with excitement because my talk was scheduled on this day. The conference hall was full of around 300-400 people. At first I was delighted to listen to the keynote from COO of OpenStack, &lt;a href=&quot;https://www.openstack.org/community/members/profile/31&quot;&gt;Mark Collier&lt;/a&gt; about how people are using OpenStack. Then a small session for networking started, there I got to meet many people who are contributing to OpenStack and was talking about the work they do. Then two panels started, each having separate talks and as I said before, I had to make tough choices on which to attend and which to leave. I liked some talks a lot like ‘How to Write an app in OpenStack’ by &lt;a href=&quot;https://twitter.com/tomfifield&quot;&gt;Tom Fifield&lt;/a&gt; and ‘Database experiences - designing Cassandra backend for Keystone’ by &lt;a href=&quot;http://www.rushiagr.com/&quot;&gt;Rushi Agarwal&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://ajayaa.github.io/&quot;&gt;Ajaya Agarwal&lt;/a&gt;. Other than this not to mention about the yummy food all attendees got.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-presentation---outreachy-with-openstack-zaqar&quot;&gt;My Presentation - Outreachy with OpenStack Zaqar&lt;/h3&gt;
+&lt;p&gt;My talk was to share experience of ‘Outreachy with OpenStack Zaqar’(&lt;a href=&quot;http://exploreshaifali.github.io/talks/6-8-2015-outreachy-with-OpenStack-zaqar.html#/cover-page&quot;&gt;slides&lt;/a&gt;). I was the only girl who was presenting a talk there. Other than me there was one more girl, &lt;a href=&quot;https://twitter.com/vinothiniraju&quot;&gt;Vinothini Raju&lt;/a&gt; who was on stage, in the panel discussion for ‘Impact of OpenStack in Emerging Market’.&lt;/p&gt;
+
+&lt;p&gt;Basically in the talk I explained about my journey with &lt;a href=&quot;http://openstack.org/&quot;&gt;OpenStack&lt;/a&gt; through &lt;a href=&quot;https://wiki.gnome.org/Outreachy&quot;&gt;Outreachy&lt;/a&gt; from start to end. Why I wanted to contribute to open source projects and specifically &lt;a href=&quot;http://openstack.org/&quot;&gt;OpenStack&lt;/a&gt;, how I got to know about &lt;a href=&quot;https://wiki.gnome.org/Outreachy&quot;&gt;Outreachy&lt;/a&gt;, how I started contributing, about my initial contribution, few Road-Blocks, ups and downs and all things that I believe I have achieved while and after the internship.&lt;/p&gt;
+
+&lt;p&gt;Also I presented few things about my project during Outreachy internship- ‘&lt;a href=&quot;https://blueprints.launchpad.net/zaqar/+spec/split-data-and-control-plane&quot;&gt;Split data/control planes of Zaqar&lt;/a&gt;’, little overview of &lt;a href=&quot;https://wiki.openstack.org/wiki/Zaqar&quot;&gt;Zaqar&lt;/a&gt; and its &lt;a href=&quot;http://exploreshaifali.github.io/2015/07/28/what-why-zaqar/&quot;&gt;benefits&lt;/a&gt; because I have seen few people over there who were curious to know more about &lt;a href=&quot;https://blueprints.launchpad.net/zaqar/+spec/split-data-and-control-plane&quot;&gt;Zaqar&lt;/a&gt;. After the talk many girls approached me to know more about &lt;a href=&quot;https://wiki.gnome.org/Outreachy&quot;&gt;Outreachy&lt;/a&gt;. I was happy to discuss with all of them more and helping them to reach out to &lt;a href=&quot;https://wiki.gnome.org/Outreachy&quot;&gt;Outreachy&lt;/a&gt;/&lt;a href=&quot;http://openstack.org/&quot;&gt;OpenStack&lt;/a&gt; and sharing about my experience.&lt;/p&gt;
+
+&lt;p&gt;I hope more girls come ahead in tech and open source world, and I will be happy to help!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 19 Aug 2015 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2015/08/19/OpenStack-Day-India-2015/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2015/08/19/OpenStack-Day-India-2015/</guid>
+        
+        <category>openstack</category>
+        
+        <category>outreachy</category>
+        
+        <category>opw</category>
+        
+        <category>event</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Zaqar What and Why</title>
+        <description>&lt;p&gt;I added few lines of code in &lt;a href=&quot;https://wiki.openstack.org/wiki/Zaqar&quot;&gt;Zaqar&lt;/a&gt;, &lt;a href=&quot;http://openstack.org/&quot;&gt;OpenStack&lt;/a&gt; messaging and notification service as part of my Outreachy internship, but as the perfection is endless, learning and knowledge too. Zaqar developers are continuously adding more code to make Zaqar a perfect service, and I am learning more about Zaqar and other OpenStack components and continue contributing to OpenStack.&lt;/p&gt;
+
+&lt;p&gt;So as reading more about Zaqar and its use cases, I realized that if you look at the top level, will find it very similar to various other message brokers like &lt;a href=&quot;http://rabbitmq.com/&quot;&gt;RabbitMQ&lt;/a&gt;, &lt;a href=&quot;http://activemq.apache.org/&quot;&gt;ActiveMQ&lt;/a&gt; etc. So what is the main difference between them and Zaqar, or it is yet another similar message broker? I think its worth to list all the benefits that Zaqar provide, and here it is.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-zaqar&quot;&gt;What is Zaqar?&lt;/h3&gt;
+&lt;p&gt;Zaqar is a multi-tenant cloud messaging and notification service for OpenStack[&lt;a href=&quot;https://wiki.openstack.org/wiki/Zaqar&quot;&gt;3&lt;/a&gt;] that allow users to build scalable, reliable and high-performing applications. So if you want to send or receive messages between various components of your web or mobile applications Zaqar can help you. These components can be client device and server too.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-zaqar&quot;&gt;Why Zaqar?&lt;/h3&gt;
+&lt;p&gt;Here are the benefits of Zaqar:&lt;/p&gt;
+
+&lt;h4 id=&quot;the-api&quot;&gt;The API&lt;/h4&gt;
+&lt;p&gt;Zaqar provide a Fully HTTP based RESTful API, so it offer all the benefits that every other RESTfull API offer. Developer will have ease of using all Get, Put, Post, Delete etc HTTP calls for transforming messages. Developers can think in terms of resources and being HTTP driven, it is fully firewall-friendly.&lt;/p&gt;
+
+&lt;p&gt;The API is build for OpenStack, on the top of OpenStack, so it is integrated with other OpenStack components as much as possible. Like authentication layer of Zaqar is integrated with Keystone. Thus you can map the tenants present in keystone easily and serve multiple projects at the time. That is why Zaqar is multi-tenant cloud messaging service.&lt;/p&gt;
+
+&lt;h4 id=&quot;scalability&quot;&gt;Scalability&lt;/h4&gt;
+&lt;p&gt;Zaqar is designed not only to be easy to use for developers but also to be easy to scale. It is highly-available and horizontally scalable. In order to scale Zaqar service you only need to start another Zaqar server, which will be atomic to the rest of the applicaiton.&lt;/p&gt;
+
+&lt;h4 id=&quot;fully-configurable&quot;&gt;Fully Configurable&lt;/h4&gt;
+&lt;p&gt;As like various other components of OpenStack Zaqar layers are fully pluggable, that is you can plug in and plug out the drivers you want to use. You can put all such information in conf file and configure the service the way you want. You can also configure default time_to_live for messages, maximum size of a message, maximum number of messages in a queue, max_reconnect_attempts and other such similar configs. You can configure the datastore you want to use for storing and managing messages. At present Zaqar support MongoDB and Redis. You can configure transport drivers to use as per your requirements and situation. At present Zaqar provide HTTP based and WebSocket protocol based transport drivers.&lt;/p&gt;
+
+&lt;h4 id=&quot;persistence-transportation&quot;&gt;Persistence Transportation&lt;/h4&gt;
+&lt;p&gt;As Zaqar support two types of transport driver, wsgi(HTTP bases) and websocket, you can choose the one which you want to use. If you are using wsgi driver for transporting your messages(which is the default one), that mean you are using simple HTTP calls to transport messages from point a to point b over the network. If you are using websocket transport driver, you can enjoy all those facilities that a wesocket transportation protocol provide like bi-directional, full-duplex communication, single TCP connection for client and server communicate for the lifecycle of WebSocket connection etc. You can read more about websocket vs HTTP at [&lt;a href=&quot;http://enterprisewebbook.com/ch8_websockets.html&quot;&gt;6&lt;/a&gt;] and [&lt;a href=&quot;http://blog.arungupta.me/rest-vs-websocket-comparison-benchmarks/&quot;&gt;7&lt;/a&gt;]. That mean you can send large messages in large amount efficiently with websocket protocol over the network. Thus you can persistently transport your messages safely if you are using Zaqar.&lt;/p&gt;
+
+&lt;h4 id=&quot;multiple-messaging-patterns&quot;&gt;Multiple Messaging patterns&lt;/h4&gt;
+&lt;p&gt;Zaqar support various &lt;a href=&quot;https://wiki.openstack.org/wiki/Zaqar/Use_Cases&quot;&gt;messaging patterns&lt;/a&gt;, like point to point communication, publisher-subscriber, producer-consumer. So you can use Zaqar as per the situation like if you want to use it for notification service, for event broadcasting, for task distributing or for any other pattern.&lt;/p&gt;
+
+&lt;p&gt;So these are all the benefits of using Zaqar!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2015/07/28/what-why-zaqar/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2015/07/28/what-why-zaqar/</guid>
+        
+        <category>openstack</category>
+        
+        <category>messaging</category>
+        
+        <category>zaqar</category>
+        
+        <category>sqs</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Getting into Summer of Code Programs</title>
+        <description>&lt;p&gt;After successfully completing Outreachy &lt;a href=&quot;https://wiki.gnome.org/OutreachProgramForWomen/2014/DecemberMarch#Accepted_Participants&quot;&gt;Internship&lt;/a&gt; round 9(Dec’14 to Mar’15) I applied to &lt;a href=&quot;http://www.google-melange.com/gsoc/project/details/google/gsoc2015/shifali/5634387206995968&quot;&gt;GSOC’15&lt;/a&gt; for two organizations, and was accepted by both of them. Finally decided to work with Systers because I liked that project, tech stack, work and most importantly their motive - “To encourage women in Computer Science and Technology”. This blog has my suggestions to students/people who want to get into any these programs(&lt;a href=&quot;http://google-melange.com/&quot;&gt;GSoC&lt;/a&gt; &lt;a href=&quot;https://wiki.gnome.org/Outreachy&quot;&gt;Outreachy&lt;/a&gt;, &lt;a href=&quot;http://railsgirlssummerofcode.org/&quot;&gt;RGSoC&lt;/a&gt;, &lt;a href=&quot;http://www.opendaylight.org/community/summer-intern-program&quot;&gt;Day Light&lt;/a&gt;), want to learn a lot of interesting things, contribute to open source, have fun and also earn good stipend. :)&lt;/p&gt;
+
+&lt;h3 id=&quot;read-what-is-already-there-and-ask-what-is-not&quot;&gt;Read what is already there and Ask what is not&lt;/h3&gt;
+&lt;p&gt;The rule of thumb is to look for what is there on the web and ask what is not. Google efficiently for such advice, there are plenty of posts that you can find on different blogs, &lt;a href=&quot;http://www.quora.com/Google-Summer-of-Code-GSoC&quot;&gt;Quora&lt;/a&gt; etc. Just query “How to get into GSoC” or “Tips to get into GSoC” and you will get enormous advice. They all provide loads of motivation, encouragement and suggestions, that will surely help you.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-am-not-a-good-programmercoder-can-i-try&quot;&gt;I am not a good programmer/coder can I try?&lt;/h3&gt;
+&lt;p&gt;In simple words, Yes.&lt;/p&gt;
+
+&lt;p&gt;You are not expected to do hardcore programming on each and every day of your coding period of internship. Rather such programs allow you to learn new things, that could be new software or tools or programming methodologies or real world software development strategies. You will have your mentor(s) with you who will help you and guide you to become better coder/programmer/to solve unexpected issues and complete the project. They will help you in understanding different concepts and will allow you to grow at your own pace.&lt;/p&gt;
+
+&lt;p&gt;It’s total fun, believe me. :)&lt;/p&gt;
+
+&lt;h3 id=&quot;choosing-projectorganization&quot;&gt;Choosing project/organization&lt;/h3&gt;
+&lt;p&gt;It is a peculiarly interesting as well as one of the immensely important tasks.&lt;/p&gt;
+
+&lt;p&gt;Just go through the list of all orgs’ project ideas and find the one that is exciting for you. All that you need to do is - look at different project ideas, start a process in mind, understand a problem and think for their solutions. Isn’t it interesting?&lt;/p&gt;
+
+&lt;p&gt;Now why is it important? Because you need to find a project in which you have keen interest. Yes, it is immensely important! You should choose a project for which you have deep passion. Else after sometime that project will become a burden on you and you will no more enjoy working on it. So it is very important to find a project that looks interesting, exciting and amusing to you.&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-ask-to-ask-just-ask&quot;&gt;Don’t ask to ask, Just ask&lt;/h3&gt;
+&lt;p&gt;Okay, it’s a good practice to search by your own first and gather higher level knowledge, but you should not hesitate if you are not able to find anything which can help you to move forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/No_such_thing_as_a_stupid_question&quot;&gt;There is nothing like a stupid question&lt;/a&gt;. Don’t be timid or feel shy or scary in asking questions. “If you ask a question it makes you look stupid for 5 minutes – but if you don’t ask – you stay stupid for fifty years”, so &lt;a href=&quot;https://shaifaliagrawal.wordpress.com/2015/01/17/two-merge-so-far/&quot;&gt;always ask questions in your life&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;community-matters-a-lot&quot;&gt;Community matters a lot&lt;/h3&gt;
+&lt;p&gt;“This is true for me”. In my first internship I got a super cool community where along with technical knowledge and guidance I got loads of emotional support as well as a fun-filled environment where we talk with each other on IRC and chill out with technical discussions.&lt;/p&gt;
+
+&lt;p&gt;While in few of the other communities, I have seen few interns struggling to get their patch reviewed and get suggestions for obstacles they are suffering with.
+Mentor is a single person or two or few more people, they do guide you well but its better to have a good community. I have always preferred to increase the width of source from where I am getting knowledge and talk to the members of community other than the mentor.&lt;/p&gt;
+
+&lt;p&gt;Keep remember ‘The More Eyes, The Better!’.&lt;/p&gt;
+
+&lt;h3 id=&quot;writing-proposal&quot;&gt;Writing Proposal&lt;/h3&gt;
+&lt;p&gt;Writing proposal for summer of code programs and describing the solution for your proposed project in it is a great experience in itself. It deserves a separate post, I will write one soon and update the link here.&lt;/p&gt;
+
+&lt;h3 id=&quot;one-secret-&quot;&gt;One Secret :)&lt;/h3&gt;
+&lt;p&gt;The only thing that you need to know is if you think getting into any of such program is difficult, than it will become difficult for you, even if it is not. And actually it is not. Yes, no doubt it is challenging, it is a bit tough but not so difficult that you cannot make it. If you yourself believe that it is difficult and you will not able to make it, than you will even not able to put enough efforts to get into it.&lt;/p&gt;
+
+&lt;p&gt;While on the other hand if you believe that yes I know it is challenging, but I’m gonna have all the fun, than no matter what, you will put efforts beyond your own limitations and beyond your own expectations and you will get it.&lt;/p&gt;
+
+&lt;p&gt;So First thing, Forget the Fear of Failure!&lt;br /&gt;
+Second, If you deadly want it, you will put huge efforts in it and will make it possible!&lt;/p&gt;
+
+&lt;p&gt;Good Luck!&lt;/p&gt;
+
+&lt;p&gt;Special &lt;strong&gt;Thanks&lt;/strong&gt; to &lt;a href=&quot;http://tapasweni-pathak.github.io/&quot;&gt;Tapasweni Pathak&lt;/a&gt; for suggesting modifications in this post.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 08 Jun 2015 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2015/06/08/getting-into-summer-of-code-programs/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2015/06/08/getting-into-summer-of-code-programs/</guid>
+        
+        <category>soc</category>
+        
+        <category>gsoc</category>
+        
+        <category>outreachy</category>
+        
+        <category>opw</category>
+        
+        <category>rgsoc</category>
+        
+        
+      </item>
     
   </channel>
 </rss>
