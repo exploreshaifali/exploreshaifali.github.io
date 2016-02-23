@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GSoC Application for Systers Portal Meetup Feature"
+title:  "GSoC15 Application for Systers Portal Meetup Feature"
 date:   2015-08-24
 tags:
   - openstack
