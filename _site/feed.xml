@@ -5,12 +5,91 @@
     <description>This Blog is about my experiments and experience with technology, computer science and life events.</description>
     <link>http://exploreshaifali.github.io/</link>
     <atom:link href="http://exploreshaifali.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Feb 2016 22:21:32 +0530</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 22:21:32 +0530</lastBuildDate>
+    <pubDate>Fri, 10 Jun 2016 02:06:09 +0530</pubDate>
+    <lastBuildDate>Fri, 10 Jun 2016 02:06:09 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>GSoC Application for Systers Portal Meetup Feature</title>
+        <title>Understanding Zaqar Pools and Flavor</title>
+        <description>&lt;p&gt;Here I am answering very common questions that are being asked on zaqar IRC channel(#openstack-zaqar @ freenode): &lt;br /&gt;
+	- What are pools and flavor?&lt;br /&gt;
+  - Okay, how a pool is connected to queues?&lt;br /&gt;
+	- What are pools group?&lt;br /&gt;
+	- And pools weight?&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-pools&quot;&gt;What are pools?&lt;/h3&gt;
+
+&lt;p&gt;Pools are containers(that mean storage nodes) which is independent, isolated and contain the messages to transfer. Their main purpose is to provide an easy way to scale Zaqar storage because you can add as many pool as you want. Though as like a node, it is recommended to scale each independent pool as much as possible before adding new ones.&lt;/p&gt;
+
+&lt;p&gt;Each pool have 4 main properties:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Name  
+2. URI  
+3. Group  
+4. Weight  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt; is the name that you want to give to that pool.&lt;br /&gt;
+&lt;strong&gt;URI&lt;/strong&gt; is the endpoint that your pool will have.&lt;br /&gt;
+&lt;strong&gt;Group&lt;/strong&gt;, think of it like a tag that you want to given to more than one pool so that it keeps you remind the purpose/capabilities of all pools that falls under that group. Basically very few times a single pool will satisfy you, in most of the cases you will need a group of pools, and to keep track of all those pools you can assign them into a group. You can consider a pool as a node and a group of pool as clusters of pools that serve some common purpose.&lt;br /&gt;
+&lt;strong&gt;Weight&lt;/strong&gt; is the property that allow you set priority of a pool for accepting coming queues. More the weight, more likely it is for a pool to accept the coming queue. It cab be any integer more -1. That mean 0 is the lowest priority of any pool. So if you don’t want a pool to get registered with any coming queue, you can set its weight to 0.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-visualize-things&quot;&gt;Lets visualize things:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;1. You have created a queue
+2. Post a message in that queue    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After posting message to a queue, it get stored on a node(pool) on which you have installed your data plane, till the time message does not get expire or is not being destroyed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;3. If you have attached a queue to a pool, message will go to that pool else it will go to default pool.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now question arise how to attach to a pool, let say you have a queue with name q1 and a pool with name p1. How will you register queue q1 to pool p1 so that all messages that you post to q1 goes to the receiver through pool p1.&lt;/p&gt;
+
+&lt;h4 id=&quot;registering-queues-to-pools&quot;&gt;Registering queues to pools:&lt;/h4&gt;
+
+&lt;p&gt;This is where &lt;strong&gt;flavors&lt;/strong&gt; comes in. A flavor in terms of Zaqar, specify a pool’s capability(can be any combination of FIFO, claims, durability, AOD(at least once delivery), hight_throughput). So let say we have following pools:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;p1: {name: p1, uri: &quot;xxx/xxx/xx&quot;, group: g1, weight: 3}  
+p2: {name: p2, uri: &quot;xxx/xxx/aa&quot;, group: g1, weight: 4}  
+p3: {name: p1, uri: &quot;yyy/yyy/yy&quot;, group: g2, weight: 3}  
+p4: {name: p1, uri: &quot;yyy/yyy/bb&quot;, group: g2, weight: 4}      
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and flavors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;f1 : {name&quot;: f1&quot;, capabilities: [&#39;durability&#39;], group: [g1]}  
+f2 : {name: &quot;f2&quot;, capabilities: [&#39;FIFO&#39;], group: [g1, g2]}  
+f3 : {name: &quot;f3&quot;, capabilities: [&#39;high_throughput&#39;], group: [g2]}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and queues:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;q1: {name: q1, flavors: [f1, f2]}  
+q2: {name; q2, flavors: [f3, f2]}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thus while creating a queue you can add existing flavor names to queue that can be a part of some existing group from pools. This is how linking of queues to pool works. A queue will get linked to the group via flavor and then will get registered to more likelyhood pool(the one with max priority and is free to accept more queues) of that group, as per weith of the pools in that group.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 24 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://exploreshaifali.github.io/2016/01/24/understanding-zaqar-pools-and-flavors/</link>
+        <guid isPermaLink="true">http://exploreshaifali.github.io/2016/01/24/understanding-zaqar-pools-and-flavors/</guid>
+        
+        <category>openstack</category>
+        
+        <category>zaqar</category>
+        
+        <category>queuing</category>
+        
+        <category>messaging</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>GSoC15 Application for Systers Portal Meetup Feature</title>
         <description>&lt;p&gt;Holla! Here I am sharing my GSoC 2015 application for &lt;strong&gt;Systers, an Anita Borg Institute Community&lt;/strong&gt;, project named - &lt;strong&gt;Systers Portal Meetup Feature&lt;/strong&gt;. They have pre-defined format of application so basically everything below is answers of questions present in their application format.&lt;/p&gt;
 
 &lt;hr /&gt;
