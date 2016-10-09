@@ -13,15 +13,15 @@ Holla! Here I am sharing my GSoC 2015 application for **Systers, an Anita Borg I
 
 ---
 
-> ###Profile links:  
- 
+> ### Profile links:  
+
 [Website][Website]  
 [Github][Github]  
 [Twitter][Twitter]  
 [Linkedin][Linkedin]  
 [Google+][Google+]  
 [Launchpad][Launchpad]
-  
+
 > Are you a Syster [(http://www.systers.org/)](www.systers.org)? Would you join if you are accepted? (Note: Systers is only open to women in computing; if you are male, you may not join, though you are welcome to join systers-dev, our development list.)
 
 Yes. My join request for Systers is accepted!
@@ -43,44 +43,44 @@ ___
 **Project Specific Questions**
 
 > Which Systers GSoC project are you applying for (please submit a separate application for each project):
-[
+
 Systers GSoC project I am applying for - [Meetup Features][4]
 
 > What do you plan to accomplish over this summer for this project? (Please tell us what project you want to work on, how you will approach that project portion, and what your milestones are. You may want to ask for help from the systers-dev@systers.org list if you have not created project milestones before, or if you are unsure what is realistic to accomplish. GSOC divides the summer in half, and at the midpoint, you are paid if you are reasonably close to the milestones you proposed to reach by then, and again for meeting your milestones at the end of the summer.
 
 > If your project proposal is accepted, you will have a chance to work with your mentors to revise these milestones, and we always take into account “unforeseen circumstances”, such as discovering that the code you were going to build on top of is incompatible with mailman. However, being able to realistically estimate how much you will be able to accomplish is an important part of this proposal.)
 
-###Abstract
+### Abstract
 Systers used Meetup Everywhere for their global community. However, Everywhere was discontinued in December 2014.
 
 This project is aimed to develop a web based meetup management application to provide facilities similar to Meetup Everywhere that serve Systers Global Community.
 
-###Motivation (Project impact on Systers)
+### Motivation (Project impact on Systers)
 We have Systers community portal that help in reducing the communication gap between groups by allowing different groups to share information and get latest news.
 
 A Meetup management application will be helpful not only for meetup organizers in organizing, managing and controlling meetups but also for members to discuss about coming meetups and participate in meetups smoothly as much as possible.
 
-###Goals
+### Goals
 The main goal of this proposal is to provide Systers Global Community a web based solution to manage and control all the global and local meetups that they organize.
 
 We have four different stakeholders - Administrators,Organizers, Members and Guest. Each one of them have different roles, authorities and responsibilities. The web application should let all the stakeholders perform all their task and activities efficiently with minimum efforts and lots of ease.
 
-###Technology Stack
+### Technology Stack
 Since this project is to extend some features in [systers portal][portal_github], tech stake will be same as that of systers portal, that said: Python/Django and postgreSQL.
 For showing map to users, [django_easy_maps][2] can be used, I have used this app in my past project [Help The Needy!][3].
 
-###Project Design Details
+### Project Design Details
 The project needs to add some apps to systers_portal project to fulfill all needs of Systers' global community that they want in their meetup application.
 
 We will need to define following database tables:
 
-####Database:
+#### Database:
 All attributes marked with `*` are mandatory.
 
 
 For **Chapters(local_meetup_groups)**  
 
-1. **chapters**: 
+1. **chapters**:
 
     -  id* #default primary key
     -  chapter_name*   #unique key
@@ -107,7 +107,7 @@ For **Chapters(local_meetup_groups)**
 
 For **meetups**  
 4. **meetups**:  
- 
+
   *  id*     #default primary key
   *  meetup_datatime
   *  meetup_venu
@@ -118,7 +118,7 @@ For **meetups**
   *  last_updated_datetime*
 
 This was the basic chapter's and meetup's database, as we will add more features in the project, more table will be needed, mentioned below
- 
+
 For Syster meetup **visitors or guest**  
 5. **users_systers_meetup_guest**:    
 For those who are not systers member but want to attend the meetup, can be a visitor or a guest. This can be implemented like SystersMeetupGuest as we have SystersUser in systers_portal.
@@ -163,10 +163,10 @@ Since the need is to design and develop an integrated component of the portal fo
 
 Once the database is finalized, I will convert it into Django models.
 
-####New Apps:  
+#### New Apps:  
 Since Django works on 'multiple apps in a project' policy, I am planning to add following different apps and also stating what functionality each app will deliver. Basically this will be the overall architecture of project meetup-features.
 
-1. **chapters**: 
+1. **chapters**:
   Manage local meetup groups data and functionality, cover following features:
  *  Admin - create a new Systers meetup location(Chapter)
  *  Admin - Assign meetup organizers
@@ -175,7 +175,7 @@ Since Django works on 'multiple apps in a project' policy, I am planning to add 
  *  Organizers - Manage Chapter Profile
  *  Organizers - Able to post new local meetup
 
-2. **meetup**: 
+2. **meetup**:
 Manage data and functionality of all meetups under a chlocal_meetup group). Will cover following tasks:
   * Organizers - Manage Meetup Profile
   * Organizers -  Able to manage meetups other than events in a meetup
@@ -191,7 +191,7 @@ Manage data and functionality of all meetups under a chlocal_meetup group). Will
    * members - Post to Discussion area
    * Guests - View Discussion area  
 
-####Tasks - urls, views, templates  
+#### Tasks - urls, views, templates  
 Since for almost each task/feature, we will need at lest one url, view, template; further let use look into details of how will we achieve each feature that needs to be added and their brief detail:
 
 For **Systers Admin** we need to add:
@@ -258,7 +258,7 @@ For **guests/visitors** following features are needed:
   -  View Discussion area
       As like other systers members they are also allowed to view discussion area
 
-###List of templates
+### List of templates
 
 * meetup_organizer dashboard that will contain:
     * button to add new chapter
@@ -285,7 +285,7 @@ For **guests/visitors** following features are needed:
 * add new meetup/edit meetup profile
 * add new chapter/edit chapter profile
 
-###Milestones
+### Milestones
 
 1. Front end **mockups**
 2. Systers super **admin panel**
@@ -307,7 +307,7 @@ For **guests/visitors** following features are needed:
 8. Discussion Area
 9. Final Demo
 
-###TIMELINE
+### TIMELINE
 
 <table border="1">
   <tbody>
@@ -469,11 +469,11 @@ Yes! Since I love programming in **Python** and have interest in **web developme
 
 I have multiple concrete reasons to work on this project:  
 
-####My Interest  
+#### My Interest  
 The very first reason is that the project is related to web development( Python+Django+database) that is something I am highly interested in. Working on python Django and databases always makes me happy. Website is a communication medium with others and I think I can communicate with others very well through my coding skills.
 Another reason is that this project demands to build something from scratch, it is not something to modify an existing functionality rather add new features so I have to write whole code from 'start to end' and this will let me learn a lot!
 
-####Past Experience
+#### Past Experience
 I already have an experience of similar program - [Outreachy][14](previously known as Outreach Program for Women) where I worked on a project with running my college in parallel, it was “winter of code” for me. So being committed to the project(and timeline) and working hard for it is what am aware about very well.
 
 I have build a web app in 4 days [Help The Needy!][3] for a hackathon on world women's day that let users find NGO near to them so that they can help needy. So again committing with time and working hard for project is what I am well aware of.Thus for Systers Meetup Features also I will able to work without hassle.
@@ -481,7 +481,7 @@ I have build a web app in 4 days [Help The Needy!][3] for a hackathon on world w
 #### Motivation
 I have been working as **Python** Developer and Analyst at [Development Center][18](DC, a section in my college) along with my college studies. There we took lots of initiative to bring people more close to technology. Like I have taken workshop for Python, HTML, CSS, Linux for my college students. Also we went to villages to teach girls about basics of computers. This shows my motivation towards computer science and technology and also towards bringing people(specially women) closer to technology.
 
-####Systers Mission
+#### Systers Mission
 This is well known that ratio of Women in technology is very less comparative to Men. Reason is not that women are not capable, they are! it is that "they does not participate".
 Systers Mission to “increase the number of women in computer science and make the environments in which women work more conducive to their continued participation in the field.” is what I immensely support! As I have mentioned above I took initiative to teach village girls about computers. Looking at the happiness and satisfaction on the face of those girls gave feelings that are something way beyond the imagination. We need to bring more and more women close to technology and computer science.
 Women need to believe that they are awesome! They can stand along with any other men in the world and give them tough competition!
@@ -510,7 +510,7 @@ Not any concrete Plan, but since I got travel grant from [OpenStack][13] Foundat
 
 I have scheduled the timeline for project accordingly.
 
-###Education: 
+### Education:
 
 >What year are you in school?
 
@@ -519,9 +519,9 @@ I am in fifth year of an integrated(10+2+6) masters program in my college.
 >What programming courses have you taken?
 
 Apart from C, C++ and Java,Algorithms, relational databases. Linux courses in my college I have taken various courses on Python, Programming, Databases, DataScience from various MOOCs offering sites like [Coursera][20], [edx][21], [Udacity][22] and self learning tutorials like [codeacademy][23].
-    
 
->What did you like about them? What did you not like? 
+
+>What did you like about them? What did you not like?
 
 The first language that I learned was C. Writing programs in C was full of fun task for me. Then I have learned other languages, various concepts and fundamentals of computer science. I still remember while taking algorithms classes I got to know how a Fibannaci series program can be implemented in different ways using iterative approach, recursive approach, dynamic programming, matrix optimization approach and how the programs' time complexity can vary from exponential to O(n) to Log(n).
 
@@ -533,10 +533,10 @@ The thing that I don't like is we as a student are forced to study all the subje
 
 Computer Science
 
->Why have you chosen that? 
+>Why have you chosen that?
 
 I believe Technology and Computer Science is something that is not just amazing,but also involved in each and every part of our life. It plays a role in how we order/cook food to how we connect to thousands of people in the world. It holds a vital part in almost all the activities we do in our life. It have power to change the world, change the culture, change the thinking of people, making the lives more better.
-         
+
 I strongly believe everyone should learn about technology and be a part of tech world. And best part is there is nothing hard in it. If someone is interested in arts they can use technology and CS, if someone interested in share markets they can use technology and CS, if someone interested in cars they can use technology and CS. I believe if a person understand technology and is close to it he/she has a power of changing things  and world for themselves as well as for other people.
 
 So this is the reason why I chose it! I am highly passionate about building the tools/software/applications that people want, that can make their life better and easier.
@@ -546,12 +546,12 @@ So this is the reason why I chose it! I am highly passionate about building the 
 Yes. Lot many!
   * Being an [OpenStack][13] intern(under [Outreachy][14] program, my first open source contribution, more detailing is below under my FOSS contributions), I worked with whole Zaqar team and witOpenStack hackers.
   * Developed a mobile responsive web app [Help The Needy!][3] in group of two.
-  * Being a part of [DC][18](a section in my college) I have learned importance of a team. I realized that happiness and success of all team members is as much important as of yours. I realized one can't move ahead alone. Its the team that support you, nourish you, help you, myou to keep moving ahead to achieve the goal.
+  * Being a part of [DC][18](a section in my college) I have learned importance of a team. I realized that happiness and success of all team members is as much important as of yours. I realized one can't move ahead alone. Its the team that support you, nourish you, help you, encourage you to keep moving ahead to achieve the goal.
 There I have worked in group for following projects:  
-[IIPS website][24]  
-[Bonafide Automation][25]
+     - [IIPS website][24]  
+     - [Bonafide Automation][25]
 
->What was your primary contribution to/role in the group? 
+>What was your primary contribution to/role in the group?
 
 Following are the projects in which I worked in group:
 
@@ -637,7 +637,7 @@ Since Systers mission is to bring women closer to technology, it is something fa
 [Twitter]: http://twitter.com/exploreshaifali  
 [Linkedin]: https://www.linkedin.com/profile/view?id=257818581  
 [Google+]: https://plus.google.com/u/0/+ShaifaliAgrawal  
-[Launchpad]: https://launchpad.net/~agrawalshaifali09 
+[Launchpad]: https://launchpad.net/~agrawalshaifali09
 [2]: https://pypi.python.org/pypi/django-easy-maps
 [3]: http://help-the-needy.herokuapp.com/
 [4]: https://github.com/systers/ossprojects/wiki/Meetup%20Features
