@@ -1,6 +1,6 @@
-# Django - Choosing TextField over CharField
+# Overcome the myth - "CharField is better than TextField"
 
-A couple of months back while working on database design at HashGrowth, we noticed that for a couple of CharFields(of a Django model), we don't have any upper limit for length of characters. Also we don't expect those fields to be long enough to use TextField. Because there was no `max_length` restriction, we thought of using TextField instead of CharField, if and only if there is no performance difference when using either. So we wanted to know if performance affect by any means while using any of them.
+A couple of months back while working on database design at HashGrowth[7], we noticed that for a couple of CharFields(of a Django model), we don't have any upper limit for length of characters. Also we don't expect those fields to be long enough to use TextField. Because there was no `max_length` restriction, we thought of using TextField instead of CharField, if and only if there is no performance difference when using either. So we wanted to know if performance affect by any means while using any of them.
 
 ###Disclaimer
 
@@ -93,4 +93,4 @@ If you find django code a bit of mummo jummo, and don't want to look into it mor
 [4]: https://www.postgresql.org/docs/9.5/static/datatype-character.html 
 [5]: https://github.com/django/django/blob/master/django/db/backends/postgresql/base.py#L90
 [6]: https://docs.djangoproject.com/en/1.10/ref/databases
-
+[7]: http://hashgrowth.com/
