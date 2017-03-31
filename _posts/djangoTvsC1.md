@@ -1,14 +1,14 @@
 # Django - Choosing TextField over CharField
 
-A couple of months back while working on database design at hashgrowth, we noticed that for a couple of CharFields(of a Django model), we don't have any upper limit for length of characters. Also we don't expect those fields to be long enough to use TextField. Because there was no `max_length` restriction, we thought of using TextField instead of CharField, if and only if there is no performance difference when using either. So we wanted to know if performance affect by any means while using any of them.
+A couple of months back while working on database design at HashGrowth, we noticed that for a couple of CharFields(of a Django model), we don't have any upper limit for length of characters. Also we don't expect those fields to be long enough to use TextField. Because there was no `max_length` restriction, we thought of using TextField instead of CharField, if and only if there is no performance difference when using either. So we wanted to know if performance affect by any means while using any of them.
 
 ###Disclaimer
 
 We concluded that - Django's TextField and CharField with PorstgreSql database have no difference in terms of performance. 
 
-Here I am writing down the whole postmortem story and how we reached to the conslusion that TextField does not affect to performance by any means.
+Here I am writing down the whole postmortem story and how we reached to the conclusion that TextField does not affect to performance by any means.
 
-### The Begining
+### The Beginning
 
 
 At first place, we checked out Django docs, for CharField[1] it says:  
@@ -32,7 +32,7 @@ At first place, we checked out Django docs, for CharField[1] it says:
     If you specify a max_length attribute, it will be reflected in the Textarea widget of the auto-generated form field. However it is not enforced at the model or database level. Use a CharField for that.
 ```
  
-Basically it says that CharField should be used for small string and TextField for larger strings. The only difference it mention is, the restriction of `max_length` argument in CharField, which is to enforce the maximum lenght of string at database level and in Django valdiation in case of CharField. In case of TextField it is optional and if used, it does not enforced at the model or database level.
+Basically it says that CharField should be used for small string and TextField for larger strings. The only difference it mention is, the restriction of `max_length` argument in CharField, which is to enforce the maximum length of string at database level and in Django validation in case of CharField. In case of TextField it is optional and if used, it does not enforced at the model or database level.
 
 So far, all good. Django doc does not talk anything about performance of TextField and CharField.
 
