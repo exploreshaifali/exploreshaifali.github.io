@@ -4,7 +4,7 @@ A couple of months back while working on database design at HashGrowth, we notic
 
 ###Disclaimer
 
-We concluded that - Django's TextField and CharField with PorstgreSql database have no difference in terms of performance. 
+We concluded that - Django's TextField and CharField with PorstgreSql database have no difference in terms of performance. You should use CharField only when you want to enforce max_length of field at database level.
 
 Here I am writing down the whole postmortem story and how we reached to the conclusion that TextField does not affect to performance by any means.
 
