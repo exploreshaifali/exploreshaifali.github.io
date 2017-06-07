@@ -13,7 +13,7 @@ facebook_username:  shaifali.agrawal1
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 8
+paginate: 9
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
