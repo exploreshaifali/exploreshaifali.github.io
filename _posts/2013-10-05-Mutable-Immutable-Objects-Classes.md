@@ -39,7 +39,7 @@ Refrences:
 * [If immutable objects are good, why do people keep creating mutable objects?][1]
 * [Mutable and Immutable Objects][2]
 * [Immutable Class Interview Questions][3]
-* [http://javarevisited.blogspot.in/2010/10/why-string-is-immutable-or-final-in-java.html][4]
+* [why string is immutable or final in java][4]
 
 [1]: https://softwareengineering.stackexchange.com/questions/151733/if-immutable-objects-are-good-why-do-people-keep-creating-mutable-objects
 [2]: http://www.javaranch.com/journal/2003/04/immutable.htm  
