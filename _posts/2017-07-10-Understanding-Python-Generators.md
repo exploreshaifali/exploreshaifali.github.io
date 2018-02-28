@@ -18,11 +18,11 @@ I started with a warm up exercise, where I wrote an easy-peasy code. Here is the
 ```
 def mycount():
     n =0
-    numbers = [] # 3 get rid of
+    numbers = [] # 1 get rid of
     while n < 10:
-        numbers.append(n) # yield
+        numbers.append(n) # 3 yield
         n += 1
-    return numbers # rid of it
+    return numbers # 2 rid of it
 
 for num in count():
     print("Got number", num)
